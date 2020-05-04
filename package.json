@@ -1,0 +1,24 @@
+{
+  "name": "lucid",
+  "version": "1.0.0",
+  "description": "Celeste map making tools written in node.js",
+  "main": "lucid.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "debug": "^4.1.1",
+    "eslint": "^6.8.0",
+    "should": "^13.2.3"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "BloodSweatAndCode",
+  "license": "MIT"
+}
