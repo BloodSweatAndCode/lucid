@@ -7,7 +7,7 @@ const Map = require('./lib/Map');
 		const map = await Map.load(config.testMapFile);
 		console.log(JSON.stringify(map, null, 2));
 	} catch (err) {
-		await log(err.stack)
+		await log(err.stack);
 		process.exit(1);
 	}
 })();
