@@ -8,8 +8,7 @@
     "test": "test"
   },
   "dependencies": {
-    "chalk": "^4.0.0",
-    "debug": "^4.1.1"
+    "chalk": "^4.0.0"
   },
   "devDependencies": {
     "mocha": "^7.1.2",

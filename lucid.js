@@ -1,7 +1,6 @@
 const config = require('./config');
 const fs = require('fs').promises;
-const log = require('./lib/log')('lucid');
-const Side = require('./lib/Side');
+const { Side } = require('./lib/class');
 
 (async function() {
 	try {
@@ -15,7 +14,7 @@ const Side = require('./lib/Side');
 		// console.log(JSON.stringify(map, null, 2));
 		// map.save(config.testMapDstFile);
 	} catch (err) {
-		await log(err.stack);
+		console.error(err.stack);
 		process.exit(1);
 	}
 })();
