@@ -1,5 +1,7 @@
 const config = require('./config');
+const exec = require('util').promisify(require('child_process').exec);
 const fs = require('fs').promises;
+const os = require('os');
 const { Side } = require('./lib/class');
 
 (async function() {
@@ -9,10 +11,17 @@ const { Side } = require('./lib/class');
 
 		await fs.writeFile('output/test.json', JSON.stringify(side, null, 2));
 
-		// console.log(side);
-		// const map = await Map.load(config.testMapFile);
-		// console.log(JSON.stringify(map, null, 2));
-		// map.save(config.testMapDstFile);
+		await side.encode(config.testMapDstFile);
+
+		// mac sucks and won't allow you to write a stream to a package (.app dir),
+		// so we just copy the file from the output to the Mods dir
+		if (os.platform() === 'darwin') {
+			exec(`cp ${config.testMapDstFile} ${os.homedir() + '/Library/Application\\ Support/Steam/steamapps/common/Celeste/Celeste.app/Contents/MacOS/Mods'}`);
+		}
+
+		console.log('done');
+
+		// await fs.writeFile('output/test.json', JSON.stringify(side, null, 2));
 	} catch (err) {
 		console.error(err.stack);
 		process.exit(1);
