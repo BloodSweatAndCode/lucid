@@ -6,6 +6,7 @@ Celeste map making tools written in node.js
 
 ## Prerequisites
 
+* [node.js 10+](https://nodejs.org/en/)
 * [Celeste](http://www.celestegame.com/)
 * [Everest - Celeste Mod Loader](https://everestapi.github.io/)
 
