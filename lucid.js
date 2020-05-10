@@ -2,12 +2,18 @@ const config = require('./config');
 const exec = require('util').promisify(require('child_process').exec);
 const fs = require('fs').promises;
 const os = require('os');
-const { Side } = require('./lib/class');
+const { Entity, Side } = require('./lib/class');
 
 (async function() {
 	try {
 		const side = new Side();
 		await side.load(config.testMapFile);
+		side.map.rooms[0].entities.push(new Entity('spinner', {
+			x: 152,
+			color: 'Blue',
+			attachToSolid: false,
+			y: 120
+		}));
 
 		await fs.writeFile('output/test.json', JSON.stringify(side, null, 2));
 
