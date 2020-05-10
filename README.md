@@ -24,6 +24,18 @@ npm install --save lucid
 
 > Coming soon
 
+## Contact
+
+Easiest way to get a hold of me is to drop me a message in the [BloodSweatAndCode's Lab discord](https://discord.gg/77Ndqdn). Check the `#lucid-dev` channel for stuff related to lucid, or feel free to roam around in the other channels dedicated to my other major project, [CV2R - Castlevania 2 Randomizer](https://github.com/BloodSweatAndCode/cv2r).
+
 ## Credits
 
-The _real_ map editing kings are [Vexatos](https://github.com/Vexatos) and [Cruor](https://github.com/Cruor), who created Maple, Ahorn, and are working on Loenn, all found at the [Celestial Cartogrpahers github page](https://github.com/CelestialCartographers). Those tools are the ones you really want to be looking at for Celeste map building.
+The _real_ map editing kings are [Vexatos](https://github.com/Vexatos) and [Cruor](https://github.com/Cruor). They created:
+
+* [Maple](https://github.com/CelestialCartographers/Maple) - [Julia](https://julialang.org/) API for developing Celeste maps
+* [Ahorn](https://github.com/CelestialCartographers/Ahorn) - Visual map maker and level editor for Celeste
+* [Loenn](https://github.com/CelestialCartographers/Loenn) (WIP) - The next evolution in visual map making for Celeste (Ahorn's eventual successor)
+
+All these repos can be found at the [Celestial Cartogrpahers github page](https://github.com/CelestialCartographers). Those tools are the ones you really want to be looking at for Celeste map building. Additionally, if you want to learn more about Celeste map building or get in touch with Vexatos or Cruor, you can find them in the [Celeste discord](https://discord.gg/yex8gd3) on the `#map_making` channel.
+
+Big thanks to Vexatos specifically for helping me understand how Maple works and giving me lots of details on the Celeste `bin` file format.
