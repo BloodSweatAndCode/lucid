@@ -1,6 +1,6 @@
 # lucid
 
->> **DISCLAIMER**: This is purely a proof of concept now. It's not ready to really do much of anything yet until I build out a map editing API.
+> **DISCLAIMER**: This is purely a proof of concept now. It's not ready to really do much of anything yet until I build out a map editing API.
 
 Celeste map making tools written in node.js
 
@@ -17,11 +17,11 @@ npm install --save lucid
 
 ## Usage
 
->> Coming soon
+> Coming soon
 
 ## API Docs
 
->> Coming soon
+> Coming soon
 
 ## Credits
 
