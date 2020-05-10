@@ -35,4 +35,4 @@ config.testMapName = 'test.bin';
 config.testMapFile = path.join(config.fixturesDir, config.testMapName);
 config.testMapDstFile = path.join(config.modDir, config.testMapName);
 
-module.exports = config;
+module.exports = Object.assign({}, lucid, config);

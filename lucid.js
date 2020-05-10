@@ -8,12 +8,14 @@ const { Entity, Side } = require('./lib/class');
 	try {
 		const side = new Side();
 		await side.load(config.testMapFile);
-		side.map.rooms[0].entities.push(new Entity('spinner', {
-			x: 152,
-			color: 'Blue',
-			attachToSolid: false,
-			y: 120
-		}));
+		// side.map.rooms[0].entities.push(new Entity('spinner', {
+		// 	x: 152,
+		// 	color: 'Blue',
+		// 	attachToSolid: false,
+		// 	y: 120
+		// }));
+
+		console.log(side.sideName);
 
 		await fs.writeFile('output/test.json', JSON.stringify(side, null, 2));
 
