@@ -1,6 +1,7 @@
-const { outputDir, tmpDir } = require('../config');
 const mkdirp = require('mkdirp');
 const rmfr = require('rmfr');
+
+const { outputDir, tmpDir } = global.testConfig;
 
 before(async () => {
 	if (!tmpDir) {

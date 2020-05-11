@@ -17,7 +17,7 @@
     "should": "^13.2.3"
   },
   "scripts": {
-    "mocha": "nyc --reporter=html mocha -r should \"./test/**/*.test.js\"",
+    "mocha": "nyc --reporter=html mocha -r should -r ./test/setup.js \"./test/**/*.test.js\"",
     "eslint": "eslint \"**/*.js\"",
     "test": "npm run eslint && npm run mocha"
   },

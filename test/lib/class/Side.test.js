@@ -1,10 +1,9 @@
 const fs = require('fs').promises;
 const path = require('path');
-const { testMapFile, tmpDir } = require('../../../config');
 const { Map, Side } = require('../../../lib/class');
 
+const { binFile, tmpDir } = global.testConfig;
 const sideNames = [ 'A', 'B', 'C' ];
-const binFile = testMapFile;
 
 describe('Side', () => {
 

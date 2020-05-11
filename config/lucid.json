@@ -3,5 +3,10 @@
 	"logFile": "output/lucid.txt.log",
 	"tmpDir": "tmp",
 	"outputDir": "output",
-	"modDir": "output"
+	"modDir": "output",
+
+	"testDir": "test",
+	"fixturesDir": "test/fixtures",
+	"testMapName": "test.bin",
+	"testMapFile": "test/fixtures/test.bin"
 }
