@@ -10,7 +10,9 @@
   "dependencies": {},
   "devDependencies": {
     "coveralls": "^3.1.0",
+    "docdash": "^1.2.0",
     "eslint": "^6.8.0",
+    "jsdoc": "^3.6.4",
     "mkdirp": "^1.0.4",
     "mocha": "^7.1.2",
     "nyc": "^15.0.1",
@@ -22,7 +24,8 @@
     "coveralls": "nyc --reporter=text-lcov mocha -r should -r ./test/setup.js \"./test/**/*.test.js\" | coveralls",
     "eslint": "eslint \"**/*.js\"",
     "test": "npm run eslint && npm run mocha",
-    "ci": "npm run eslint && npm run coveralls"
+    "ci": "npm run eslint && npm run coveralls",
+    "docs": "jsdoc -c ./config/jsdoc.json"
   },
   "author": "BloodSweatAndCode",
   "license": "MIT"

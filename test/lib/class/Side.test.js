@@ -89,22 +89,7 @@ describe('Side', () => {
 
 	describe('#encodeMetadata', () => {
 
-		it('encodes metadata', () => {
-			const target = { __children: [] };
-			side.encodeMetadata(target, { foo: { taco: 'bar' }, bsac: { mad: 'coder'} });
-			target.should.eql({
-				__children: [
-					{
-						__name: 'foo',
-						taco: 'bar'
-					},
-					{
-						__name: 'bsac',
-						mad: 'coder'
-					}
-				]
-			});
-		});
+		it.skip('encodes metadata');
 
 	});
 

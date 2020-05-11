@@ -10,7 +10,6 @@ describe('Effect', () => {
 			const apply = new Effect(name, data);
 			apply.should.have.properties({
 				name,
-				__name: name,
 				data
 			});
 		});

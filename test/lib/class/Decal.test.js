@@ -7,7 +7,6 @@ describe('Decal', () => {
 		it('inits decal', () => {
 			const decal = new Decal('foo', 12, 34, 1, 1);
 			decal.should.have.properties({
-				__name: 'decal',
 				texture: 'foo',
 				x: 12,
 				y: 34,

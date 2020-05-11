@@ -9,8 +9,6 @@ describe('Apply', () => {
 			const parallax = [];
 			const apply = new Apply(data, parallax);
 			apply.should.have.properties({
-				__name: 'apply',
-				__children: parallax,
 				data,
 				parallax
 			});

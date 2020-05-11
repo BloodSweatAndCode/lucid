@@ -7,7 +7,6 @@ describe('Filler', () => {
 		it('inits filler', () => {
 			const decal = new Filler(12, 34, 100, 10);
 			decal.should.have.properties({
-				__name: 'rect',
 				x: 12,
 				y: 34,
 				w: 100,
