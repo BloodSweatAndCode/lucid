@@ -3,27 +3,25 @@ const lucid = require('./lucid.json');
 const os = require('os');
 const path = require('path');
 
-const config = {};
+const config = {
+	defaultModDir: {
+		darwin: os.homedir() + '/Library/Application\\ Support/Steam/steamapps/common/Celeste/Celeste.app/Contents/MacOS/Mods',
+		win32: 'C:\\Program Files (x86)\\Steam\\steamapps\\common\\Celeste\\Mods'
+	}
+};
 
 // Ensure we have a mod directory and that it is valid. If no modDir is specified,
 // try to find the default Steam+Everest installation locations.
 let modDir = lucid.modDir;
 if (!modDir) {
 	const platform = os.platform();
-	switch (platform) {
-	case 'darwin':
-		modDir = os.homedir() + '/Library/Application\\ Support/Steam/steamapps/common/Celeste/Celeste.app/Contents/MacOS/Mods';
-		break;
-	case 'win32':
-		modDir = 'C:\\Program Files (x86)\\Steam\\steamapps\\common\\Celeste\\Mods';
-		break;
-	default:
+	modDir = config.defaultModDir[platform];
+	if (!modDir) {
 		throw new Error(`No default mod directory for platform "${platform}". You must specifiy it in the "modDir" key of "config/lucid.json".`);
 	}
 }
-try {
-	fs.existsSync(modDir);
-} catch (err) {
+
+if (!fs.existsSync(modDir)) {
 	throw new Error(`mod directory "${modDir}" does not exist. Fix "modDir" path in "config/lucid.json".`);
 }
 
