@@ -1,4 +1,4 @@
-# lucid
+# lucid [![Build Status](https://travis-ci.org/tonylukasavage/lucid.svg?branch=master)](https://travis-ci.org/tonylukasavage/lucid)
 
 > **DISCLAIMER**: This is purely a proof of concept now. It's not ready to really do much of anything yet until I build out a map editing API.
 

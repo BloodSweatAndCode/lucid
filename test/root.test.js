@@ -1,4 +1,4 @@
-const { tmpDir } = require('../config');
+const { outputDir, tmpDir } = require('../config');
 const mkdirp = require('mkdirp');
 const rmfr = require('rmfr');
 
@@ -8,6 +8,7 @@ before(async () => {
 	}
 	await rmfr(tmpDir);
 	await mkdirp(tmpDir);
+	await mkdirp(outputDir);
 });
 
 after(async () => {
