@@ -1,6 +1,6 @@
 {
 	"modDir": "",
-	"logFile": "lucid.txt.log",
+	"logFile": "output/lucid.txt.log",
 	"tmpDir": "tmp",
 	"outputDir": "output",
 	"modDir": "output"

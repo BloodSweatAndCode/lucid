@@ -67,4 +67,46 @@ describe('Side', () => {
 
 	});
 
+	describe('#loadMetadata', () => {
+
+		it('loads metadata', () => {
+			side.loadMetadata().should.eql({});
+			side.loadMetadata({}).should.eql({});
+			side.loadMetadata({ __children: [] }).should.eql({});
+			side.loadMetadata({
+				__children: [
+					{ __name: 'foo', bar: 'quux', __fake: 123 },
+					{ __name: 'nodes', bar: 'quux' },
+					{ __name: 'bsac', x: 123, __none: 432, y: 32 }
+				]
+			}).should.eql({
+				foo: { bar: 'quux' },
+				nodes: { bar: 'quux' },
+				bsac: { x: 123, y: 32 }
+			});
+		});
+
+	});
+
+	describe('#encodeMetadata', () => {
+
+		it('encodes metadata', () => {
+			const target = { __children: [] };
+			side.encodeMetadata(target, { foo: { taco: 'bar' }, bsac: { mad: 'coder'} });
+			target.should.eql({
+				__children: [
+					{
+						__name: 'foo',
+						taco: 'bar'
+					},
+					{
+						__name: 'bsac',
+						mad: 'coder'
+					}
+				]
+			});
+		});
+
+	});
+
 });
