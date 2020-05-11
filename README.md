@@ -1,4 +1,4 @@
-# lucid [![Build Status](https://travis-ci.org/tonylukasavage/lucid.svg?branch=master)](https://travis-ci.org/tonylukasavage/lucid)
+# lucid [![Build Status](https://travis-ci.org/tonylukasavage/lucid.svg?branch=master)](https://travis-ci.org/tonylukasavage/lucid) [![Coverage Status](https://coveralls.io/repos/github/tonylukasavage/lucid/badge.svg?branch=master)](https://coveralls.io/github/tonylukasavage/lucid?branch=master)
 
 > **DISCLAIMER**: This is purely a proof of concept now. It's not ready to really do much of anything yet until I build out a map editing API.
 
