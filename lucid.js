@@ -2,7 +2,7 @@ const config = require('./config');
 const exec = require('util').promisify(require('child_process').exec);
 const fs = require('fs').promises;
 const os = require('os');
-const { Entity, Side } = require('./lib/class');
+const { Side } = require('./lib/class');
 
 (async function() {
 	try {
