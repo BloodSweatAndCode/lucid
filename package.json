@@ -27,6 +27,9 @@
     "ci": "npm run eslint && npm run coveralls",
     "docs": "jsdoc -c ./config/jsdoc.json"
   },
+  "engines": {
+    "node": ">=12"
+  },
   "author": "BloodSweatAndCode",
   "license": "MIT"
 }

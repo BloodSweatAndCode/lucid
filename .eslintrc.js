@@ -11,7 +11,7 @@ module.exports = {
 		'SharedArrayBuffer': 'readonly'
 	},
 	'parserOptions': {
-		'ecmaVersion': 2018
+		'ecmaVersion': 2020
 	},
 	'ignorePatterns': [ 'docs/*' ],
 	'rules': {
@@ -40,6 +40,6 @@ module.exports = {
 		'no-trailing-spaces': [ 'error' ],
 		'no-irregular-whitespace': [ 'error' ],
 		'no-multi-spaces': [ 'error', { 'ignoreEOLComments': true } ],
-		'spaced-comment': [ 'error', 'always' ]
+		'spaced-comment': [ 'error', 'always', { 'exceptions': [ '*', '/' ] } ]
 	}
 };
