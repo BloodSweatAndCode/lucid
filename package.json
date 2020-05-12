@@ -28,7 +28,7 @@
     "docs": "jsdoc -c ./config/jsdoc.json"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=10"
   },
   "author": "BloodSweatAndCode",
   "license": "MIT"
