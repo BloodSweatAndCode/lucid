@@ -4,7 +4,7 @@ const classes = require('./lib/class');
 
 class Lucid {
 	/**
-	 * Create an instance of Lucid. This is not usually invoked directly as an instance is provided automatically when calling `require('lucid')`.
+	 * Create an instance of Lucid. This is not usually invoked directly as an instance is provided automatically when calling `require('lucid-dream')`.
 	 * @constructor
 	 * @property {Object} config - The Lucid configuration object
 	 * @property {Apply} Apply - The Apply class

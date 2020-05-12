@@ -1,4 +1,4 @@
-# lucid [![Build Status](https://travis-ci.org/tonylukasavage/lucid.svg?branch=master)](https://travis-ci.org/tonylukasavage/lucid) [![Coverage Status](https://coveralls.io/repos/github/tonylukasavage/lucid/badge.svg?branch=master)](https://coveralls.io/github/tonylukasavage/lucid?branch=master)
+# lucid-dream [![Build Status](https://travis-ci.org/tonylukasavage/lucid-dream.svg?branch=master)](https://travis-ci.org/tonylukasavage/lucid-dream) [![Coverage Status](https://coveralls.io/repos/github/tonylukasavage/lucid-dream/badge.svg?branch=master)](https://coveralls.io/github/tonylukasavage/lucid-dream?branch=master)
 
 > **DISCLAIMER**: This is purely a proof of concept now. It's not ready to really do much of anything yet until I build out a map editing API.
 
@@ -13,16 +13,16 @@ Celeste map making tools written in node.js
 ## Install
 
 ```
-npm install --save lucid
+npm install --save lucid-dream
 ```
 
 ## API Docs
 
-Full API documentation can be found at [http://tonylukasavage.github.io/lucid/](http://tonylukasavage.github.io/lucid/)
+Full API documentation can be found at [http://tonylukasavage.github.io/lucid-dream/](http://tonylukasavage.github.io/lucid-dream/)
 
 ## Contact
 
-Easiest way to get a hold of me is to drop me a message in the [BloodSweatAndCode's Lab discord](https://discord.gg/77Ndqdn). Check the `#lucid-dev` channel for stuff related to lucid, or feel free to roam around in the other channels dedicated to my other major project, [CV2R - Castlevania 2 Randomizer](https://github.com/BloodSweatAndCode/cv2r).
+Easiest way to get a hold of me is to drop me a message in the [BloodSweatAndCode's Lab discord](https://discord.gg/77Ndqdn). Check the `#lucid-dev` channel for stuff related to lucid-dream, or feel free to roam around in the other channels dedicated to my other major project, [CV2R - Castlevania 2 Randomizer](https://github.com/BloodSweatAndCode/cv2r).
 
 ## Credits
 

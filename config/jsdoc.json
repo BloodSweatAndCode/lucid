@@ -22,7 +22,7 @@
 		"collapse": true,
 		"menu": {
 			"Github": {
-				"href": "https://github.com/tonylukasavage/lucid",
+				"href": "https://github.com/tonylukasavage/lucid-dream",
 				"target": "_blank",
 				"class": "menu-item",
 				"id": "github-link"

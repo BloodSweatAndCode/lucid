@@ -1,5 +1,5 @@
 {
-  "name": "lucid",
+  "name": "lucid-dream",
   "version": "0.0.1",
   "description": "Celeste map making tools written in node.js",
   "main": "lucid.js",
