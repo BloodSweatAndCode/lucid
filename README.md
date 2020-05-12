@@ -16,13 +16,9 @@ Celeste map making tools written in node.js
 npm install --save lucid
 ```
 
-## Usage
-
-> Coming soon
-
 ## API Docs
 
-> Coming soon
+Full API documentation can be found at [http://tonylukasavage.github.io/lucid/](http://tonylukasavage.github.io/lucid/)
 
 ## Contact
 
