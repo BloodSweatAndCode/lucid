@@ -1,10 +1,10 @@
 // This example generates a playable .bin file of a simple 1 room map.
 // It contains a player spawn, dirt border, and a single spinner.
 
-const { config, Entity, Room, Side, Tiles } = require('../lucid');
+const { Entity, Room, Side, Tiles } = require('../lucid');
 
 // change this to where ever you wanna generate the new .bin file
-const destFile = 'output/test.bin';
+const destFile = 'test.bin';
 const tileString = `
 1111111111111111111111111111111111111111
 1000000000000000000000000000000000000001
@@ -57,7 +57,6 @@ const tileString = `
 		await side.encode(destFile);
 		console.log(`side file written to ${destFile}`);
 
-		if (
 	} catch (err) {
 		console.error(err.stack);
 		process.exit(1);

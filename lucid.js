@@ -1,5 +1,4 @@
 const config = require('./config/lucid.json');
-const os = require('os');
 const classes = require('./lib/class');
 
 class Lucid {
@@ -22,15 +21,7 @@ class Lucid {
 	 * @property {Trigger} Trigger - The Trigger class
 	 */
 	constructor() {
-		// attach classes
-		Object.assign(this, classes);
-
-		// initialize config
-		this.config = config;
-		this.config.defaultModDir = {
-			darwin: os.homedir() + '/Library/Application\\ Support/Steam/steamapps/common/Celeste/Celeste.app/Contents/MacOS/Mods',
-			win32: 'C:\\Program Files (x86)\\Steam\\steamapps\\common\\Celeste\\Mods'
-		};
+		Object.assign(this, classes, { config });
 	}
 }
 

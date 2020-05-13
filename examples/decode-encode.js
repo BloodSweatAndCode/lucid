@@ -1,13 +1,13 @@
-const { config, Entity, Side } = require('../lucid');
+const { Entity, Side } = require('../lucid');
 
 // change this to where ever you wanna generate the new .bin file
-const destFile = 'output/test.bin';
+const destFile = 'test.bin';
 
 (async function() {
 	try {
 		// decode the test side
 		const side = new Side();
-		await side.decode(config.testMapFile);
+		await side.decode('./test/fixtures/test.bin');
 
 		// add a spinner to the first room
 		side.map.rooms[0].entities.push(new Entity('spinner', {

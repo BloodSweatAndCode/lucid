@@ -1,12 +1,6 @@
 {
-	"modDir": "",
+	"celesteDir": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Celeste",
 	"logFile": "output/lucid.txt.log",
 	"tmpDir": "tmp",
-	"outputDir": "output",
-	"modDir": "output",
-
-	"testDir": "test",
-	"fixturesDir": "test/fixtures",
-	"testMapName": "test.bin",
-	"testMapFile": "test/fixtures/test.bin"
+	"outputDir": "output"
 }
