@@ -2,7 +2,7 @@
   "name": "lucid-dream",
   "version": "0.0.1",
   "description": "Celeste mod making tools written in node.js. Includes map making/editing and mod packaging.",
-  "main": "lucid.js",
+  "main": "lucid-dream.js",
   "directories": {
     "lib": "lib",
     "test": "test"

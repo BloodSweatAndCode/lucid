@@ -1,4 +1,4 @@
-const config = require('./config/lucid.json');
+const config = require('./config/lucid-dream.json');
 const classes = require('./lib/class');
 
 class Lucid {

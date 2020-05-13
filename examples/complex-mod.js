@@ -1,6 +1,6 @@
 const fs = require('fs').promises;
 const path = require('path');
-const { Chapter, Entity, Mod, Room, Side, Tiles } = require('../lucid');
+const { Chapter, Entity, Mod, Room, Side, Tiles } = require('../lucid-dream');
 
 const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 

@@ -5,7 +5,7 @@ const { outputDir, tmpDir } = global.testConfig;
 
 before(async () => {
 	if (!tmpDir) {
-		throw new Error('must define tmpDir in config/lucid.json');
+		throw new Error('must define tmpDir in config/lucid-dream.json');
 	}
 	await rmfr(tmpDir);
 	await mkdirp(tmpDir);
@@ -14,7 +14,7 @@ before(async () => {
 
 after(async () => {
 	if (!tmpDir) {
-		throw new Error('must define tmpDir in config/lucid.json');
+		throw new Error('must define tmpDir in config/lucid-dream.json');
 	}
 	await rmfr(tmpDir);
 });

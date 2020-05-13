@@ -1,7 +1,7 @@
 // This example generates a playable .bin file of a simple 1 room map.
 // It contains a player spawn, dirt border, and a single spinner.
 
-const { Entity, Room, Side, Tiles } = require('../lucid');
+const { Entity, Room, Side, Tiles } = require('../lucid-dream');
 
 // change this to where ever you wanna generate the new .bin file
 const destFile = 'test.bin';

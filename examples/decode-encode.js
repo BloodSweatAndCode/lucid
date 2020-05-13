@@ -1,4 +1,4 @@
-const { Entity, Side } = require('../lucid');
+const { Entity, Side } = require('../lucid-dream');
 
 // change this to where ever you wanna generate the new .bin file
 const destFile = 'test.bin';
