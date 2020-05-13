@@ -7,11 +7,14 @@ class Lucid {
 	 * @constructor
 	 * @property {Object} config - The Lucid configuration object
 	 * @property {Apply} Apply - The Apply class
+	 * @property {Chapter} Chapter - The Chapter class
 	 * @property {Decal} Decal - The Decal class
+	 * @property {Dialog} Dialog - The Dialog class
 	 * @property {Effect} Effect - The Effect class
 	 * @property {Entity} Entity - The Entity class
 	 * @property {Filler} Filler - The Filler class
 	 * @property {Map} Map - The Map class
+	 * @property {Mod} Mod - The Mod class
 	 * @property {ObjectTiles} ObjectTiles - The ObjectTiles class
 	 * @property {Parallax} Parallax - The Parallax class
 	 * @property {Room} Room - The Room class
