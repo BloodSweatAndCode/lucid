@@ -18,7 +18,7 @@ npm install --save lucid-dream
 
 ## Configuration
 
-All you need to do do is tell lucid-dream where to find your Celeste installation via the `celesteDir` property of the `config/lucid.json` file. Here's a few of the default locations:
+All you need to do do is tell lucid-dream where to find your Celeste installation via the `celesteDir` property of the `config/lucid-dream.json` file. Here's a few of the default locations:
 
 * **Steam (Window):** `C:\Program Files (x86)\Steam\steamapps\common\Celeste`
 * **Steam (Mac):** `~/Library/Application\ Support/Steam/steamapps/common/Celeste/Celeste.app/Contents/MacOS`
