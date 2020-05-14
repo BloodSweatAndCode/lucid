@@ -19,12 +19,9 @@ const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 		x: 20,
 		y: 176
 	});
-	const spinner = new Entity('spinner', {
-		x: 152,
-		color: 'Blue',
-		attachToSolid: false,
-		y: 120
-	});
+
+	const spinner = Entity.createSpinner({ x: 152, y: 120 });
+
 	const room = new Room({
 		name: 'intro',
 		position: [ 0, 0 ],

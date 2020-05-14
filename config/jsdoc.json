@@ -5,20 +5,21 @@
 	"source": {
 		"include": "./",
 		"includePattern": "\\.js$",
-		"excludePattern": "(node_modules/|docs|test|coverage)"
+		"excludePattern": "(node_modules|docs|test|coverage)"
 	},
 	"plugins": [
 		"plugins/markdown"
-  ],
+	],
 	"opts": {
 		"template": "node_modules/docdash",
 		"encoding": "utf8",
-		"destination": "../lucid.github.io",
+		"destination": "../tonylukasavage.github.io",
 		"recurse": true,
 		"verbose": true,
 		"readme": "./README.md"
 	},
 	"docdash": {
+		"static": true,
 		"collapse": true,
 		"menu": {
 			"Github": {
