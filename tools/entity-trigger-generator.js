@@ -5,9 +5,7 @@ const rmfr = require('rmfr');
 const template = require('lodash.template');
 const { capFirst, safeName } = require('../lib/utils');
 
-const compiled = template(`// THIS FILE IS GENERATED. DO NOT EDIT DIRECTLY.
-
-const Entity = require('../Entity');
+const compiled = template(`const Entity = require('../Entity');
 
 /**
  * Creates a <%= name %>, which is implemented by the underlying C# class<%= suffix %> <%= classes %>.

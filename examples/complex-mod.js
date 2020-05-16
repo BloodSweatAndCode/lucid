@@ -1,6 +1,6 @@
 const fs = require('fs').promises;
 const path = require('path');
-const { Chapter, Entity, Mod, Room, Side, Tiles, Trigger } = require('../lucid-dream');
+const { config, Chapter, Entity, Mod, Room, Side, Tiles, Trigger } = require('../lucid-dream');
 
 const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 
@@ -19,9 +19,10 @@ const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 	// entities
 	const player = new Entity.Player({ x: 20, y: 176 });
 	const spinner = new Entity.Spinner({ x: 152, y: 120 });
-	const bumper1 = new Entity.BigSpinner({ x: 100, y: 100 });
-	const bumper2 = new Entity.BigSpinner({ x: 150, y: 100 });
-	const bumper3 = new Entity.BigSpinner({ x: 200, y: 100 });
+	const bumpers = [];
+	for (let i = 0; i < 8; i++) {
+		bumpers.push(new Entity.BigSpinner({ x: (i * 30) + 10, y: (Math.random() * 140) + 20 }));
+	}
 
 	// triggers
 	const altMusic = new Trigger.MusicTrigger({
@@ -39,7 +40,7 @@ const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 		position: [ 0, 0 ],
 		size: [ 320, 184 ],
 		fgTiles: new Tiles(await fs.readFile(tileDataPath, 'utf8')),
-		entities: [ player, spinner, bumper1, bumper2, bumper3 ],
+		entities: [ player, spinner, ...bumpers ],
 		triggers: [ altMusic ]
 	});
 
@@ -49,7 +50,7 @@ const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 	sideA.map.rooms.push(room);
 
 	// package the mod
-	await mod.package('output');
+	await mod.package('output'); //path.join(config.celesteDir, 'Mods'));
 
 	console.log(mod);
 })();
