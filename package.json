@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "Celeste mod making tools written in node.js. Includes map making/editing and mod packaging.",
   "main": "lucid-dream.js",
-  "type": "module",
   "directories": {
     "lib": "lib",
     "test": "test"
@@ -35,7 +34,7 @@
     "build": "node tools/entity-trigger-generator.js && node tools/build.js && npm run docs"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=10"
   },
   "author": "BloodSweatAndCode",
   "license": "MIT"
