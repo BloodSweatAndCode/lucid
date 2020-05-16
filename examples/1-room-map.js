@@ -4,7 +4,7 @@
 const { Entity, Room, Side, Tiles } = require('../lucid-dream');
 
 // change this to where ever you wanna generate the new .bin file
-const destFile = 'test.bin';
+const destFile = 'output/test.bin';
 const tileString = `
 1111111111111111111111111111111111111111
 1000000000000000000000000000000000000001
@@ -34,20 +34,15 @@ const tileString = `
 (async function() {
 	try {
 		const side = new Side();
-		const player = new Entity('player', {
-			x: 20,
-			y: 176
-		});
-		const spinner = new Entity('spinner', {
+		const player = new Entity.Player({ x: 20, y: 176 });
+		const spinner = new Entity.Spinner({
 			x: 152,
 			color: 'Blue',
 			attachToSolid: false,
 			y: 120
 		});
-		const room = new Room({
+		const room = new Room([ 0, 0 ], {
 			name: 'intro',
-			position: [ 0, 0 ],
-			size: [ 320, 184 ],
 			fgTiles: new Tiles(tileString),
 			entities: [ player, spinner ]
 		});

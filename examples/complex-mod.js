@@ -1,6 +1,6 @@
 const fs = require('fs').promises;
 const path = require('path');
-const { config, Chapter, Entity, Mod, Room, Side, Tiles, Trigger } = require('../lucid-dream');
+const { Chapter, Entity, Mod, Room, Side, Tiles, Trigger } = require('../lucid-dream');
 
 const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 
@@ -35,10 +35,8 @@ const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 	});
 
 	// room creation
-	const room = new Room({
+	const room = new Room([ 0, 0 ], {
 		name: 'intro',
-		position: [ 0, 0 ],
-		size: [ 320, 184 ],
 		fgTiles: new Tiles(await fs.readFile(tileDataPath, 'utf8')),
 		entities: [ player, spinner, ...bumpers ],
 		triggers: [ altMusic ]
@@ -50,7 +48,7 @@ const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 	sideA.map.rooms.push(room);
 
 	// package the mod
-	await mod.package('output'); //path.join(config.celesteDir, 'Mods'));
+	await mod.package('output');
 
 	console.log(mod);
 })();

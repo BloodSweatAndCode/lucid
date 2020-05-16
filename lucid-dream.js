@@ -58,30 +58,30 @@ const Lucid = {
  	*/
 	Tiles: require('./lib/api/Tiles'),
 	/**
- 	* @property {Room} Room - The Room class
+ 	* @property {Chapter} Chapter - The Chapter class
  	* @memberof Lucid
  	*/
-	Room: require('./lib/api/Room'),
+	Chapter: require('./lib/api/Chapter'),
 	/**
  	* @property {Map} Map - The Map class
  	* @memberof Lucid
  	*/
 	Map: require('./lib/api/Map'),
 	/**
- 	* @property {Side} Side - The Side class
- 	* @memberof Lucid
- 	*/
-	Side: require('./lib/api/Side'),
-	/**
- 	* @property {Chapter} Chapter - The Chapter class
- 	* @memberof Lucid
- 	*/
-	Chapter: require('./lib/api/Chapter'),
-	/**
  	* @property {Mod} Mod - The Mod class
  	* @memberof Lucid
  	*/
-	Mod: require('./lib/api/Mod')
+	Mod: require('./lib/api/Mod'),
+	/**
+ 	* @property {Room} Room - The Room class
+ 	* @memberof Lucid
+ 	*/
+	Room: require('./lib/api/Room'),
+	/**
+ 	* @property {Side} Side - The Side class
+ 	* @memberof Lucid
+ 	*/
+	Side: require('./lib/api/Side')
 };
 
 /**
@@ -600,15 +600,15 @@ Lucid.Entity = {
  	*/
 	ResortLantern: require('./lib/api/entities/ResortLantern'),
 	/**
- 	* @property {Resortmirror} Resortmirror - The Resortmirror class
- 	* @memberof Lucid.Entity
- 	*/
-	Resortmirror: require('./lib/api/entities/Resortmirror'),
-	/**
  	* @property {ResortRoofEnding} ResortRoofEnding - The ResortRoofEnding class
  	* @memberof Lucid.Entity
  	*/
 	ResortRoofEnding: require('./lib/api/entities/ResortRoofEnding'),
+	/**
+ 	* @property {Resortmirror} Resortmirror - The Resortmirror class
+ 	* @memberof Lucid.Entity
+ 	*/
+	Resortmirror: require('./lib/api/entities/Resortmirror'),
 	/**
  	* @property {RidgeGate} RidgeGate - The RidgeGate class
  	* @memberof Lucid.Entity
@@ -720,6 +720,11 @@ Lucid.Entity = {
  	*/
 	SummitBackgroundManager: require('./lib/api/entities/SummitBackgroundManager'),
 	/**
+ 	* @property {SummitGemManager} SummitGemManager - The SummitGemManager class
+ 	* @memberof Lucid.Entity
+ 	*/
+	SummitGemManager: require('./lib/api/entities/SummitGemManager'),
+	/**
  	* @property {Summitcheckpoint} Summitcheckpoint - The Summitcheckpoint class
  	* @memberof Lucid.Entity
  	*/
@@ -734,11 +739,6 @@ Lucid.Entity = {
  	* @memberof Lucid.Entity
  	*/
 	Summitgem: require('./lib/api/entities/Summitgem'),
-	/**
- 	* @property {SummitGemManager} SummitGemManager - The SummitGemManager class
- 	* @memberof Lucid.Entity
- 	*/
-	SummitGemManager: require('./lib/api/entities/SummitGemManager'),
 	/**
  	* @property {SwapBlock} SwapBlock - The SwapBlock class
  	* @memberof Lucid.Entity

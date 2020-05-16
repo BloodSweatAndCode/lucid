@@ -29,17 +29,13 @@ const conf = [
 const sort = function(o) {
 	switch(o) {
 	case 'Room.js':
-		return 2;
 	case 'Map.js':
-		return 3;
 	case 'Side.js':
-		return 4;
 	case 'Chapter.js':
-		return 5;
 	case 'Mod.js':
-		return 6;
+		return 'ZZZ' + o;
 	default:
-		return 1;
+		return o;
 	}
 };
 
@@ -51,7 +47,12 @@ const sort = function(o) {
 			const files = (await fs.readdir(c.path))
 				.filter(f => /\.js$/.test(f))
 				.filter(f => !(c.exclude || []).includes(f))
-				.sort((a,b) => (sort(a) < sort(b) ? -1 : 1));
+				.sort();
+
+			if (c.key === 'classes') {
+				files.sort((a,b) => (sort(a) < sort(b) ? -1 : sort(a) > sort(b) ? 1 : 0));
+			}
+
 			const array = [];
 			for (let file of files) {
 				const name = file.replace(/\.js$/, '');
