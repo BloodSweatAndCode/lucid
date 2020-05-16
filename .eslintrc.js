@@ -13,7 +13,7 @@ module.exports = {
 	'parserOptions': {
 		'ecmaVersion': 2020
 	},
-	'ignorePatterns': [ 'docs/*' ],
+	'ignorePatterns': [ 'docs/*', '*.template.js'],
 	'rules': {
 		'indent': [
 			'error',

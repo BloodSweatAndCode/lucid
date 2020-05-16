@@ -8,8 +8,10 @@
     "test": "test"
   },
   "dependencies": {
+    "archiver": "^4.0.1",
     "camelcase": "^6.0.0",
-    "json-to-pretty-yaml": "^1.2.2"
+    "json-to-pretty-yaml": "^1.2.2",
+    "lodash.template": "^4.5.0"
   },
   "devDependencies": {
     "coveralls": "^3.1.0",
@@ -28,7 +30,8 @@
     "eslint": "eslint \"**/*.js\"",
     "test": "npm run eslint && npm run mocha",
     "ci": "npm run eslint && npm run coveralls",
-    "docs": "jsdoc -c ./config/jsdoc.json"
+    "docs": "jsdoc -c ./config/jsdoc.json",
+    "build": "node tools/entity-trigger-generator.js && node tools/build.js && npm run docs"
   },
   "engines": {
     "node": ">=10"
