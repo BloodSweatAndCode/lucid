@@ -7,34 +7,32 @@ const { capFirst, safeName } = require('../lib/utils');
 
 const compiled = template(`// THIS FILE IS GENERATED. DO NOT EDIT DIRECTLY.
 
+const Entity = require('../Entity');
+
 /**
  * Creates a <%= name %>, which is implemented by the underlying C# class<%= suffix %> <%= classes %>.
- * @augments <%= type %>
- * @param {Object} [data={}] - An Object containing the attributes of the <%= name %>
- * @example
- * // create a <%= name %>
- * const { <%= type %> } = require('lucid-dream');
- * const <%= name %> = <%= type %>.<%= funcName %>({});
- * @returns {Entity} The new <%= name %>
+ * @class
+ * @extends <%= type %>
  */
-module.exports = function <%= funcName %>(data = {}) {
-	return new (require('../../class/<%= type %>'))('<%= name %>', Object.assign({
-		// fill in default property key/values specific to this <%= type %>
-	}, data));
-};
+class <%= capName %> extends Entity {
+	/**
+	 * @constructor
+	 * @param {Object} [data={}] - An object containing the attributes of the <%= name %>
+	 */
+	constructor(data = {}) {
+		return new Entity('<%= name %>', Object.assign({
+			// fill in default property key/values specific to this <%= type %>
+		}, data));
+	}
+}
+
+module.exports = <%= capName %>;
 `.trim());
 
-const genDir = path.join(__dirname, '..', 'lib', 'generated');
+const genDir = path.join(__dirname, '..', 'lib', 'api');
 const dirs = {
-	entityIndex: path.join(genDir, 'entities', 'index.js'),
-	triggerIndex: path.join(genDir, 'triggers', 'index.js'),
 	Entity: path.join(genDir, 'entities'),
 	Trigger: path.join(genDir, 'triggers')
-};
-
-const indexes = {
-	Entity: '// THIS FILE IS GENERATED. DO NOT EDIT DIRECTLY.\n\n',
-	Trigger: '// THIS FILE IS GENERATED. DO NOT EDIT DIRECTLY.\n\n'
 };
 
 (async function() {
@@ -48,6 +46,16 @@ const indexes = {
 	await mkdirp(dirs.Entity);
 	await mkdirp(dirs.Trigger);
 
+	// manual entries
+	await fs.writeFile(path.join(dirs.Entity, 'Player.js'), compiled({
+		name: 'player',
+		suffix: '',
+		classes: [ 'Player' ],
+		type: 'Entity',
+		capName: 'Player'
+	}));
+
+	// parse the Level.cs file to get the rest of the entities
 	for (let line of lines) {
 		// switch from entity to trigger entries
 		if (line.indexOf('switch (trigger.Name)') !== -1) {
@@ -60,11 +68,10 @@ const indexes = {
 		if (match !== null) {
 			// generate a creation function for this entry
 			if (current) {
-				const filename = safeName(current.name) + '.js';
-				current.funcName = 'create' + capFirst(current.name);
+				const filename = capFirst(safeName(current.name) + '.js');
+				current.capName = capFirst(current.name);
 				current.suffix = current.classes.length > 1 ? 'es' : '';
 				current.classes = current.classes.map(c => `\`${c}\``).join(', ');
-				indexes[current.type] += `exports.${current.funcName} = require('./${filename}');\n`;
 				await fs.writeFile(path.join(dirs[current.type], filename), compiled(current));
 			}
 			// start a new entity/trigger entry
@@ -78,15 +85,12 @@ const indexes = {
 		// find the C# classes associated with this entity/trigger entry
 		if (current) {
 			const match = line.match(/new\s+([^(]+)/);
-			if (match !== null && !/[<>\[\]]/.test(match[1])) {
+			if (match !== null && !/[<>[\]]/.test(match[1])) {
 				current.classes.push(match[1].trim());
 			}
 			continue;
 		}
 	}
-
-	await fs.writeFile(dirs.entityIndex, indexes.Entity);
-	await fs.writeFile(dirs.triggerIndex, indexes.Trigger);
 
 	console.log('done.');
 })();

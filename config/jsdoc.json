@@ -5,7 +5,7 @@
 	"source": {
 		"include": "./",
 		"includePattern": "\\.js$",
-		"excludePattern": "(node_modules|docs|test|coverage|examples|tools)"
+		"excludePattern": "(node_modules|docs|test|coverage|examples|tools|src)"
 	},
 	"plugins": [
 		"plugins/markdown"
@@ -21,6 +21,16 @@
 	"docdash": {
 		"static": true,
 		"collapse": true,
+		"sectionOrder": [
+			"Tutorials",
+			"Namespaces",
+			"Classes",
+			"Modules",
+			"Externals",
+			"Events",
+			"Mixins",
+			"Interfaces"
+ 		],
 		"menu": {
 			"Github": {
 				"href": "https://github.com/tonylukasavage/lucid-dream",

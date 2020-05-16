@@ -3,11 +3,13 @@
   "version": "0.0.1",
   "description": "Celeste mod making tools written in node.js. Includes map making/editing and mod packaging.",
   "main": "lucid-dream.js",
+  "type": "module",
   "directories": {
     "lib": "lib",
     "test": "test"
   },
   "dependencies": {
+    "archiver": "^4.0.1",
     "camelcase": "^6.0.0",
     "json-to-pretty-yaml": "^1.2.2",
     "lodash.template": "^4.5.0"
@@ -29,10 +31,11 @@
     "eslint": "eslint \"**/*.js\"",
     "test": "npm run eslint && npm run mocha",
     "ci": "npm run eslint && npm run coveralls",
-    "docs": "jsdoc -c ./config/jsdoc.json"
+    "docs": "jsdoc -c ./config/jsdoc.json",
+    "build": "node tools/entity-trigger-generator.js && node tools/build.js && npm run docs"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "author": "BloodSweatAndCode",
   "license": "MIT"
