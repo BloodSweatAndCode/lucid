@@ -7,15 +7,12 @@ const { capFirst, safeName } = require('../lib/utils');
 
 const compiled = template(`const Entity = require('../Entity');
 
-/**
- * Creates a <%= name %>, which is implemented by the underlying C# class<%= suffix %> <%= classes %>.
- * @class
- * @extends <%= type %>
- */
 class <%= capName %> extends Entity {
 	/**
+	 * Creates an instance of {@link <%= capName %>}, which is implemented by the underlying C# class<%= suffix %> <%= classes %> in Celeste.
 	 * @constructor
-	 * @param {Object} [data={}] - An object containing the attributes of the <%= name %>
+	 * @extends <%= type %>
+	 * @param {Object} [data={}] - An object containing the attributes of the {@link <%= capName %>} to be created
 	 */
 	constructor(data = {}) {
 		return new Entity('<%= name %>', Object.assign({
