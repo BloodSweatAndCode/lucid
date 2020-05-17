@@ -1,5 +1,5 @@
 // const cluster = require('cluster');
-const extract = require('../lib/extract');
+const { extract } = require('../lib/extract');
 
 (async function() {
 	try {
