@@ -18,10 +18,25 @@ const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 
 	// entities
 	const player = new Entity.Player({ x: 20, y: 176 });
-	const spinner = new Entity.Spinner({ x: 152, y: 120 });
 	const bumpers = [];
 	for (let i = 0; i < 8; i++) {
-		bumpers.push(new Entity.BigSpinner({ x: (i * 30) + 10, y: (Math.random() * 140) + 20 }));
+		bumpers.push(new Entity.BigSpinner({ x: Math.random() * 300 + 10, y: (Math.random() * 164) + 10 }));
+	}
+
+	// crystal path
+	const spinners = [];
+	for (let i = 0; i < 10; i++) {
+		spinners.push(new Entity.Spinner({
+			x: 50 + (i * 12),
+			y: 180 - (i * 12),
+			color: 'Rainbow'
+		}));
+
+		spinners.push(new Entity.Spinner({
+			x: 90 + (i * 12),
+			y: 180 - (i * 12),
+			color: 'Rainbow'
+		}));
 	}
 
 	// triggers
@@ -38,7 +53,7 @@ const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 	const room = new Room([ 0, 0 ], {
 		name: 'intro',
 		fgTiles: new Tiles(await fs.readFile(tileDataPath, 'utf8')),
-		entities: [ player, spinner, ...bumpers ],
+		entities: [ player, ...bumpers, ...spinners ],
 		triggers: [ altMusic ]
 	});
 

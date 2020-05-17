@@ -10,8 +10,11 @@
   "dependencies": {
     "archiver": "^4.0.1",
     "camelcase": "^6.0.0",
+    "fs-extra": "^9.0.0",
     "json-to-pretty-yaml": "^1.2.2",
-    "lodash.template": "^4.5.0"
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.template": "^4.5.0",
+    "pngjs": "^5.0.0"
   },
   "devDependencies": {
     "coveralls": "^3.1.0",

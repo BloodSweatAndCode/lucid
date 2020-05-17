@@ -1,5 +1,4 @@
 {
-	"celesteDir": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Celeste",
 	"logFile": "output/lucid.txt.log",
 	"tmpDir": "tmp",
 	"outputDir": "output"
