@@ -1,3 +1,4 @@
+// const cluster = require('cluster');
 const extract = require('../lib/extract');
 
 (async function() {
