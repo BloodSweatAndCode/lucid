@@ -42,3 +42,18 @@ The _real_ map editing kings are [Vexatos](https://github.com/Vexatos) and [Cruo
 All these repos can be found at the [Celestial Cartogrpahers github page](https://github.com/CelestialCartographers). Those tools are the ones you really want to be looking at for Celeste map building. Additionally, if you want to learn more about Celeste map building or get in touch with Vexatos or Cruor, you can find them in the [Celeste discord](https://discord.gg/yex8gd3) on the `#map_making` channel.
 
 Big thanks to Vexatos specifically for helping me understand how Maple works and giving me lots of details on the Celeste `bin` file format.
+
+## API structure
+
+* Mod
+	* Chapter(s)
+		* Side(s)
+			* Map
+				* Room(s)
+					* Entities
+					* Triggers
+					* Decals
+					* Fillers
+					* ObjectTiles
+					* Tiles
+					* Styles
