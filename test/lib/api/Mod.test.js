@@ -54,7 +54,7 @@ describe('Mod', () => {
 		it('packages a Mod', async () => {
 			await mod.package(tmpDir);
 			const modDir = path.join(tmpDir, 'TestMod');
-			access(modDir).should.be.fulfilled();
+			await access(modDir);
 
 			const yaml = await readFile(path.join(modDir, 'everest.yaml'), 'utf8');
 			const json = YAML.parse(yaml);
@@ -63,10 +63,10 @@ describe('Mod', () => {
 			json.Dependencies[0].Name.should.equal('Everest');
 			json.Dependencies[0].Version.should.equal('1.0.0');
 
-			access(path.join(modDir, 'Maps', 'testMod', 'lucidDreamAuthor', 'testChapter.bin')).should.be.fulfilled();
+			await access(path.join(modDir, 'Maps', 'testMod', 'lucidDreamAuthor', 'testChapter.bin'));
 
 			const text = await readFile(path.join(modDir, 'Dialog', 'English.txt'), 'utf8');
-			text.trim().should.equal(`testMod_lucidDreamAuthor=Test Mod
+			return text.trim().should.equal(`testMod_lucidDreamAuthor=Test Mod
 testMod_lucidDreamAuthor_testChapter=Test Chapter`);
 		});
 
