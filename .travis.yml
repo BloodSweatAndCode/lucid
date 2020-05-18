@@ -4,5 +4,5 @@ node_js:
   - 12
   - 14
 script:
-  - ls -al
+  - ls -al ./lib/api/entities
   - npm run ci
