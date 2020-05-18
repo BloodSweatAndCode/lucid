@@ -54,6 +54,8 @@ describe('Mod', () => {
 		it('packages a Mod', async () => {
 			await mod.package(tmpDir);
 
+			console.log(tmpDir, modDir);
+
 			const modDir = path.join(tmpDir, 'TestMod');
 			access(modDir).should.be.fulfilled();
 
