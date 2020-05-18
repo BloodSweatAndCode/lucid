@@ -180,10 +180,10 @@ Lucid.Entity = {
  	*/
 	Cliffflag: require('./lib/api/entities/Cliffflag'),
 	/**
- 	* @property {Cliffsideflag} Cliffsideflag - The Cliffsideflag class
+ 	* @property {CliffsideFlag} CliffsideFlag - The CliffsideFlag class
  	* @memberof Lucid.Entity
  	*/
-	Cliffsideflag: require('./lib/api/entities/Cliffsideflag'),
+	CliffsideFlag: require('./lib/api/entities/CliffsideFlag'),
 	/**
  	* @property {Clothesline} Clothesline - The Clothesline class
  	* @memberof Lucid.Entity
@@ -460,10 +460,10 @@ Lucid.Entity = {
  	*/
 	JumpThru: require('./lib/api/entities/JumpThru'),
 	/**
- 	* @property {Kevinspc} Kevinspc - The Kevinspc class
+ 	* @property {KevinsPc} KevinsPc - The KevinsPc class
  	* @memberof Lucid.Entity
  	*/
-	Kevinspc: require('./lib/api/entities/Kevinspc'),
+	KevinsPc: require('./lib/api/entities/KevinsPc'),
 	/**
  	* @property {Key} Key - The Key class
  	* @memberof Lucid.Entity
