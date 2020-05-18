@@ -70,7 +70,7 @@ describe('Side', () => {
 			await side.encode(filepath);
 			const buf = await fs.readFile(filepath);
 			(Math.round(buf.length / 100) * 100).should.equal(srcLenRounded);
-			buf.toString('utf8', 1, 12).should.equal('CELESTE_MAP');
+			buf.toString('utf8', 1, 12).should.equal('CELESTE MAP');
 		});
 
 	});

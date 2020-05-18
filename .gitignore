@@ -1,6 +1,7 @@
 .DS_Store
 output
 test.bin
+tmp
 
 # Logs
 logs

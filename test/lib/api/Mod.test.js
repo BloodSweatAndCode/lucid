@@ -54,7 +54,7 @@ describe('Mod', () => {
 		it('packages a Mod', async () => {
 			await mod.package(tmpDir);
 			const modDir = path.join(tmpDir, 'TestMod');
-			await access(modDir);
+			await (access(modDir).should.be.fulfilled());
 
 			const yaml = await readFile(path.join(modDir, 'everest.yaml'), 'utf8');
 			const json = YAML.parse(yaml);
