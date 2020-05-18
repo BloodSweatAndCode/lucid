@@ -8,6 +8,7 @@ const destFile = 'output/test.bin';
 		// decode the test side
 		const side = new Side();
 
+		// await side.decode('./examples/1-ForsakenCity.bin');
 		await side.decode('./test/fixtures/test.bin');
 		// await side.decode('C:\\Program Files (x86)\\Steam\\steamapps\\common\\Celeste\\Content\\Maps\\1-ForsakenCity.bin');
 

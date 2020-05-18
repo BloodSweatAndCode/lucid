@@ -1,6 +1,6 @@
 const extract = require('../../lib/extract');
 
-describe.only('extract', () => {
+describe.skip('extract', () => {
 
 	it('finds local celeste installation directory', async () => {
 		await extract();

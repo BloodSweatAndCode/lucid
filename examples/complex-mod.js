@@ -1,6 +1,6 @@
 const fs = require('fs').promises;
 const path = require('path');
-const { Chapter, Entity, Mod, Room, Side, Tiles, Trigger } = require('../lucid-dream');
+const { Chapter, Decal, Entity, Mod, Room, Side, Tiles, Trigger } = require('../lucid-dream');
 
 const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 
@@ -39,6 +39,9 @@ const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 		}));
 	}
 
+	// decals
+	const decal = new Decal('1-forsakencity\\broken_plane.png', 250, 136, 1.5, 1.5);
+
 	// triggers
 	const altMusic = new Trigger.MusicTrigger({
 		x: 100,
@@ -54,7 +57,8 @@ const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 		name: 'intro',
 		fgTiles: new Tiles(await fs.readFile(tileDataPath, 'utf8')),
 		entities: [ player, ...bumpers, ...spinners ],
-		triggers: [ altMusic ]
+		triggers: [ altMusic ],
+		bgDecals: [ decal ]
 	});
 
 	// assemble the mod
