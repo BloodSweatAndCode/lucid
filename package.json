@@ -31,12 +31,12 @@
   "scripts": {
     "mocha": "nyc --reporter=html mocha -r should -r ./test/setup.js \"./test/**/*.test.js\"",
     "coveralls": "nyc --reporter=text-lcov mocha -r should -r ./test/setup.js \"./test/**/*.test.js\" | coveralls",
-    "eslint": "eslint \"**/*.js\"",
+		"eslint": "eslint \"**/*.js\"",
+		"docs": "jsdoc -c ./config/jsdoc.json",
     "test": "npm run eslint && npm run mocha",
     "ci": "npm run eslint && npm run coveralls",
-    "docs": "jsdoc -c ./config/jsdoc.json",
-    "build": "node tools/build.js && npm run docs",
-    "all": "npm run build && npm test"
+    "build": "node tools/build.js",
+    "all": "npm run build && npm run docs && npm test"
   },
   "engines": {
     "node": ">=10"

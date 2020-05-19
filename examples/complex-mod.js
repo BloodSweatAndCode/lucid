@@ -40,7 +40,12 @@ const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 	}
 
 	// decals
-	const decal = new Decal('1-forsakencity\\broken_plane.png', 250, 136, 1.5, 1.5);
+	const decal = new Decal('1-forsakencity\\big_sign', {
+		x: 250,
+		y: 136,
+		scaleX: 1.5,
+		scaleY: 1.5
+	});
 
 	// triggers
 	const altMusic = new Trigger.MusicTrigger({
@@ -68,6 +73,4 @@ const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 
 	// package the mod
 	await mod.package('output');
-
-	console.log(mod);
 })();

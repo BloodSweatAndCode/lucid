@@ -2,6 +2,9 @@
 // SOURCE FILE AT "src/lucid-dream.template.js"
 
 /* eslint-disable */
+const fs = require('fs');
+const os = require('os');
+const path = require('path');
 
 /**
  * @namespace
@@ -1042,5 +1045,10 @@ Lucid.Trigger = {
  	*/
 	WindAttackTrigger: require('./lib/api/triggers/WindAttackTrigger')
 };
+
+Lucid.config.lucidDir = path.join(os.homedir(), '.lucid-dream');
+if (!fs.existsSync(Lucid.config.lucidDir)) {
+	fs.mkdirSync(Lucid.config.lucidDir);
+}
 
 module.exports = Lucid;

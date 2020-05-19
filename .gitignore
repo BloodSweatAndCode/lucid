@@ -2,6 +2,7 @@
 output
 test.bin
 tmp
+Level.cs
 
 # Logs
 logs
