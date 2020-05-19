@@ -1,0 +1,10 @@
+const <%= capName %> = require('../../../../lib/api/<%= multi %>/<%= capName %>');
+
+describe('<%= multi %>/<%= capName %>', () => {
+
+	it('creates an instance', () => {
+		const inst = new <%= capName %>();
+		inst.name.should.equal('<%= name %>');
+	});
+
+});

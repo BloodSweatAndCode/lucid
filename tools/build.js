@@ -2,7 +2,7 @@ const fs = require('fs').promises;
 const path = require('path');
 const template = require('lodash.template');
 
-const srcPath = path.join(__dirname, '..', 'src', 'lucid-dream.template.js');
+const srcPath = path.join(__dirname, '..', 'src', 'lucid-dream.ejs');
 const dstPath = path.join(__dirname, '..', 'lucid-dream.js');
 
 const conf = [
