@@ -1,14 +1,13 @@
-const fs = require('fs');
+const fs = require('fs').promises;
 const path = require('path');
 
 const config = global.generateConfig = {
 	celesteCodeDir: '/Users/tony/development/Celeste-dis',
 	apiDir: path.join(__dirname, '..', '..', 'lib', 'api'),
 	apiTestDir: path.join(__dirname, '..', '..', 'test', 'lib', 'api'),
-	templateDir: path.join(__dirname, 'templates'),
+	srcDir: path.join(__dirname, '..', '..', 'src'),
 	typeDir: path.join(__dirname, 'types')
 };
-
 
 (async function() {
 	try {

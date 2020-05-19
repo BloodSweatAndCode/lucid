@@ -5,24 +5,26 @@ const rmfr = require('rmfr');
 const template = require('lodash.template');
 const { capFirst, safeName } = require('../../../lib/utils');
 
-const types = [ 'entities', 'triggers' ];
+const types = [ 'Entity', 'Trigger' ];
 
 module.exports = async function() {
 	const {
 		celesteCodeDir,
-		templateDir,
+		srcDir,
 		apiDir,
 		apiTestDir
 	} = global.generateConfig;
 
 	const dirs = types.reduce((a, type) => {
-		a[capFirst(type)] = path.join(apiDir, type);
-		a[capFirst(type) + 'Test'] = path.join(apiTestDir, type);
+		const cap = capFirst(type);
+		const dir = type === 'Entity' ? 'entities' : 'triggers';
+		a[cap] = path.join(apiDir, dir);
+		a[cap + 'Test'] = path.join(apiTestDir, dir);
 		return a;
 	}, {});
 
-	const compiled = template(await fs.readFile(path.join(templateDir, 'entities.ejs')));
-	const compiledTest = template(await fs.readFile(path.join(templateDir, 'entities.test.ejs')));
+	const compiled = template(await fs.readFile(path.join(srcDir, 'lib', 'api', 'entities.ejs')));
+	const compiledTest = template(await fs.readFile(path.join(srcDir, 'test', 'lib', 'api', 'entities.test.ejs')));
 
 	// prep class and test dirs
 	for (let key of Object.keys(dirs)) {
