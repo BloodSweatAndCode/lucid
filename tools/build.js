@@ -10,7 +10,7 @@ const conf = [
 		key: 'classes',
 		path: path.join(__dirname, '..', 'lib', 'api'),
 		modPath: './lib/api',
-		exclude: [ 'Entity.js', 'Trigger.js' ]
+		exclude: [ 'Decal.js', 'Entity.js', 'Trigger.js' ]
 	},
 	{
 		key: 'entities',

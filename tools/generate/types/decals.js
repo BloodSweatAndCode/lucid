@@ -55,7 +55,7 @@ module.exports = async function() {
 		decals += `/**
 * namespace that holds all the names of the decals for ${newGroup}
 * @namespace ${newGroup}
-* @memberof Decal
+* @memberof Lucid.Decal
 */
 Decal.${newGroup} = {};\n`;
 		for (let { name, key } of value) {

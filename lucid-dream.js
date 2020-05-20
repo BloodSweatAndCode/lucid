@@ -20,11 +20,6 @@ const Lucid = {
  	*/
 	Apply: require('./lib/api/Apply'),
 	/**
- 	* @property {Decal} Decal - The Decal class
- 	* @memberof Lucid
- 	*/
-	Decal: require('./lib/api/Decal'),
-	/**
  	* @property {Dialog} Dialog - The Dialog class
  	* @memberof Lucid
  	*/
@@ -85,6 +80,12 @@ const Lucid = {
  	*/
 	Side: require('./lib/api/Side')
 };
+
+/**
+ * @namespace Decal
+ * @memberof Lucid
+ */
+Lucid.Decal = require('./lib/api/Decal');
 
 /**
  * @namespace Entity
