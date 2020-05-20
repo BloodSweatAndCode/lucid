@@ -1,6 +1,6 @@
 const fs = require('fs').promises;
 const path = require('path');
-const { Chapter, Decal, Entity, Mod, Room, Side, Tiles, Trigger } = require('../lucid-dream');
+const { Chapter, Decal, Dialog, Entity, Mod, Room, Side, Tiles, Trigger } = require('../lucid-dream');
 
 const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 
@@ -9,7 +9,13 @@ const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 	// create the individual mod elements
 	const mod = new Mod({
 		name: 'BSAC\'s Complex Mod Example',
-		author: 'BSAC'
+		author: 'BSAC',
+		dialog: new Dialog({
+			langs: [
+				{ name: 'English', text: { foobar: 'quux' } },
+				{ name: 'German', text: { foobar: 'quux' } }
+			]
+		})
 	});
 	const chapter1 = new Chapter({
 		name: 'The Beginning'
