@@ -40,7 +40,7 @@ const tileDataPath = path.join(__dirname, 'data', 'example-tiles-40x23.txt');
 	}
 
 	// decals
-	const decal = new Decal(Decal.ForsakenCity.brazilian_coffee_building, {
+	const decal = new Decal(Decal.ForsakenCity.broken_plane, {
 		x: 250,
 		y: 136,
 		scaleX: 1.5,

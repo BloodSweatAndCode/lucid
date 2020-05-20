@@ -52,7 +52,12 @@ module.exports = async function() {
 			delete decalGroups[group];
 		}
 
-		decals += `Decal.${newGroup} = {};\n`;
+		decals += `/**
+* namespace that holds all the names of the decals for ${newGroup}
+* @namespace ${newGroup}
+* @memberof Decal
+*/
+Decal.${newGroup} = {};\n`;
 		for (let { name, key } of value) {
 			name = name.replace(/[\s-]/g, '_');
 			decals += compiled({ group: newGroup, name, key }) + '\n';

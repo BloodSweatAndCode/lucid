@@ -21,6 +21,7 @@
 	"docdash": {
 		"static": true,
 		"collapse": true,
+		"private": false,
 		"sectionOrder": [
 			"Tutorials",
 			"Namespaces",

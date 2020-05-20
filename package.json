@@ -34,7 +34,7 @@
     "docs": "jsdoc -c ./config/jsdoc.json",
     "test": "npm run eslint && npm run mocha",
     "ci": "npm run eslint && npm run coveralls",
-    "build": "node tools/build.js",
+    "build": "node tools/generate/generate.js decals && node tools/build.js",
     "all": "npm run build && npm run docs && npm test"
   },
   "engines": {
