@@ -11,9 +11,9 @@
     "archiver": "^4.0.1",
     "camelcase": "^6.0.0",
     "debug": "^4.1.1",
-    "json-to-pretty-yaml": "^1.2.2",
     "lodash.template": "^4.5.0",
-    "pngjs": "^5.0.0"
+    "pngjs": "^5.0.0",
+    "yamljs": "^0.3.0"
   },
   "devDependencies": {
     "coveralls": "^3.1.0",
@@ -24,8 +24,7 @@
     "mocha": "^7.1.2",
     "nyc": "^15.0.1",
     "rmfr": "^2.0.0",
-    "should": "^13.2.3",
-    "yamljs": "^0.3.0"
+    "should": "^13.2.3"
   },
   "scripts": {
     "mocha": "nyc --reporter=html mocha -r should -r ./test/setup.js \"./test/**/*.test.js\"",
