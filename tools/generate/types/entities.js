@@ -32,18 +32,6 @@ module.exports = async function() {
 		await mkdirp(dirs[key]);
 	}
 
-	// manual entries
-	let manual = {
-		name: 'player',
-		suffix: '',
-		classes: [ 'Player' ],
-		type: 'Entity',
-		capName: 'Player',
-		multi: 'entities'
-	};
-	await fs.writeFile(path.join(dirs.Entity, 'Player.js'), compiled(manual));
-	await fs.writeFile(path.join(dirs.EntityTest, 'Player.test.js'), compiledTest(manual));
-
 	// process Level.cs to extract entities
 	const data = await fs.readFile(path.join(celesteCodeDir, 'Celeste', 'Level.cs'), 'utf8');
 	const lines = data.split('\n').map(l => l.trim());
@@ -89,5 +77,38 @@ module.exports = async function() {
 			}
 			continue;
 		}
+	}
+
+	// manual entries
+	const createEntry = (opts) => {
+		if (typeof opts === 'string') {
+			opts = { name: opts };
+		}
+		return Object.assign({}, {
+			suffix: '',
+			classes: [],
+			type: 'Entity',
+			capName: capFirst(opts.name),
+			multi: 'entities'
+		}, opts);
+	};
+	const entries = [
+		{ name: 'player', classes: [ 'Player' ] },
+		'darkChaserEnd',
+		'everest/coreMessage',
+		'everest/customBirdTutorial',
+		'everest/npc',
+		'everest/memorial',
+		'everest/starClimbGraphicsController',
+		'triggerSpikesOriginalDown',
+		'triggerSpikesOriginalLeft',
+		'triggerSpikesOriginalRight',
+		'triggerSpikesOriginalUp'
+	];
+
+	for (let e of entries) {
+		const entry = createEntry(e);
+		await fs.writeFile(path.join(dirs.Entity, e.capName + '.js'), compiled(entry));
+		await fs.writeFile(path.join(dirs.EntityTest, e.capName + '.test.js'), compiledTest(entry));
 	}
 };
