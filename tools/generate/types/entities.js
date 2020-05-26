@@ -84,6 +84,13 @@ module.exports = async function() {
 		if (typeof opts === 'string') {
 			opts = { name: opts };
 		}
+
+		// normalize names
+		opts.name = opts.name
+			.replace(/\/(.)/g, (match, p1) => p1.toUpperCase())
+			.replace('everest', 'custom')
+			.replace('customCustom', 'custom');
+
 		return Object.assign({}, {
 			suffix: '',
 			classes: [],
@@ -108,7 +115,7 @@ module.exports = async function() {
 
 	for (let e of entries) {
 		const entry = createEntry(e);
-		await fs.writeFile(path.join(dirs.Entity, e.capName + '.js'), compiled(entry));
-		await fs.writeFile(path.join(dirs.EntityTest, e.capName + '.test.js'), compiledTest(entry));
+		await fs.writeFile(path.join(dirs.Entity, entry.capName + '.js'), compiled(entry));
+		await fs.writeFile(path.join(dirs.EntityTest, entry.capName + '.test.js'), compiledTest(entry));
 	}
 };
