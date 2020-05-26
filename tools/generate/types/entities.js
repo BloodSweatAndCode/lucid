@@ -87,16 +87,15 @@ module.exports = async function() {
 
 		// normalize names
 		opts.name = opts.name
-			.replace(/\/(.)/g, (match, p1) => p1.toUpperCase())
-			.replace('everest', 'custom')
-			.replace('customCustom', 'custom');
+			.replace(/\/(.)/g, (match, p1) => p1.toUpperCase());
 
+		const isTrigger = /Trigger$/.test(opts.name);
 		return Object.assign({}, {
 			suffix: '',
 			classes: [],
-			type: 'Entity',
+			type: isTrigger ? 'Trigger' : 'Entity',
 			capName: capFirst(opts.name),
-			multi: 'entities'
+			multi: isTrigger ? 'triggers' : 'entities'
 		}, opts);
 	};
 	const entries = [
@@ -110,12 +109,24 @@ module.exports = async function() {
 		'triggerSpikesOriginalDown',
 		'triggerSpikesOriginalLeft',
 		'triggerSpikesOriginalRight',
-		'triggerSpikesOriginalUp'
+		'triggerSpikesOriginalUp',
+		'everest/activateDreamBlocksTrigger',
+		'everest/changeInventoryTrigger',
+		'everest/completeAreaTrigger',
+		'everest/coreModeTrigger',
+		'everest/crystalShatterTrigger',
+		'everest/customBirdTutorialTrigger',
+		'everest/dialogTrigger',
+		'everest/flagTrigger',
+		'everest/lavaBlockerTrigger',
+		'everest/musicLayerTrigger',
+		'everest/smoothCameraOffsetTrigger',
+		'windTrigger'
 	];
 
 	for (let e of entries) {
 		const entry = createEntry(e);
-		await fs.writeFile(path.join(dirs.Entity, entry.capName + '.js'), compiled(entry));
-		await fs.writeFile(path.join(dirs.EntityTest, entry.capName + '.test.js'), compiledTest(entry));
+		await fs.writeFile(path.join(dirs[entry.type], entry.capName + '.js'), compiled(entry));
+		await fs.writeFile(path.join(dirs[entry.type + 'Test'], entry.capName + '.test.js'), compiledTest(entry));
 	}
 };

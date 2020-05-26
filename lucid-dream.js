@@ -263,6 +263,11 @@ Lucid.Entity = {
  	*/
 	DarkChaser: require('./lib/api/entities/DarkChaser'),
 	/**
+ 	* @property {DarkChaserEnd} DarkChaserEnd - The DarkChaserEnd class
+ 	* @memberof Lucid.Entity
+ 	*/
+	DarkChaserEnd: require('./lib/api/entities/DarkChaserEnd'),
+	/**
  	* @property {DashBlock} DashBlock - The DashBlock class
  	* @memberof Lucid.Entity
  	*/
@@ -297,6 +302,31 @@ Lucid.Entity = {
  	* @memberof Lucid.Entity
  	*/
 	Dreammirror: require('./lib/api/entities/Dreammirror'),
+	/**
+ 	* @property {EverestCoreMessage} EverestCoreMessage - The EverestCoreMessage class
+ 	* @memberof Lucid.Entity
+ 	*/
+	EverestCoreMessage: require('./lib/api/entities/EverestCoreMessage'),
+	/**
+ 	* @property {EverestCustomBirdTutorial} EverestCustomBirdTutorial - The EverestCustomBirdTutorial class
+ 	* @memberof Lucid.Entity
+ 	*/
+	EverestCustomBirdTutorial: require('./lib/api/entities/EverestCustomBirdTutorial'),
+	/**
+ 	* @property {EverestMemorial} EverestMemorial - The EverestMemorial class
+ 	* @memberof Lucid.Entity
+ 	*/
+	EverestMemorial: require('./lib/api/entities/EverestMemorial'),
+	/**
+ 	* @property {EverestNpc} EverestNpc - The EverestNpc class
+ 	* @memberof Lucid.Entity
+ 	*/
+	EverestNpc: require('./lib/api/entities/EverestNpc'),
+	/**
+ 	* @property {EverestStarClimbGraphicsController} EverestStarClimbGraphicsController - The EverestStarClimbGraphicsController class
+ 	* @memberof Lucid.Entity
+ 	*/
+	EverestStarClimbGraphicsController: require('./lib/api/entities/EverestStarClimbGraphicsController'),
 	/**
  	* @property {ExitBlock} ExitBlock - The ExitBlock class
  	* @memberof Lucid.Entity
@@ -838,6 +868,26 @@ Lucid.Entity = {
  	*/
 	TriggerSpikesLeft: require('./lib/api/entities/TriggerSpikesLeft'),
 	/**
+ 	* @property {TriggerSpikesOriginalDown} TriggerSpikesOriginalDown - The TriggerSpikesOriginalDown class
+ 	* @memberof Lucid.Entity
+ 	*/
+	TriggerSpikesOriginalDown: require('./lib/api/entities/TriggerSpikesOriginalDown'),
+	/**
+ 	* @property {TriggerSpikesOriginalLeft} TriggerSpikesOriginalLeft - The TriggerSpikesOriginalLeft class
+ 	* @memberof Lucid.Entity
+ 	*/
+	TriggerSpikesOriginalLeft: require('./lib/api/entities/TriggerSpikesOriginalLeft'),
+	/**
+ 	* @property {TriggerSpikesOriginalRight} TriggerSpikesOriginalRight - The TriggerSpikesOriginalRight class
+ 	* @memberof Lucid.Entity
+ 	*/
+	TriggerSpikesOriginalRight: require('./lib/api/entities/TriggerSpikesOriginalRight'),
+	/**
+ 	* @property {TriggerSpikesOriginalUp} TriggerSpikesOriginalUp - The TriggerSpikesOriginalUp class
+ 	* @memberof Lucid.Entity
+ 	*/
+	TriggerSpikesOriginalUp: require('./lib/api/entities/TriggerSpikesOriginalUp'),
+	/**
  	* @property {TriggerSpikesRight} TriggerSpikesRight - The TriggerSpikesRight class
  	* @memberof Lucid.Entity
  	*/
@@ -970,6 +1020,61 @@ Lucid.Trigger = {
  	*/
 	EventTrigger: require('./lib/api/triggers/EventTrigger'),
 	/**
+ 	* @property {EverestActivateDreamBlocksTrigger} EverestActivateDreamBlocksTrigger - The EverestActivateDreamBlocksTrigger class
+ 	* @memberof Lucid.Trigger
+ 	*/
+	EverestActivateDreamBlocksTrigger: require('./lib/api/triggers/EverestActivateDreamBlocksTrigger'),
+	/**
+ 	* @property {EverestChangeInventoryTrigger} EverestChangeInventoryTrigger - The EverestChangeInventoryTrigger class
+ 	* @memberof Lucid.Trigger
+ 	*/
+	EverestChangeInventoryTrigger: require('./lib/api/triggers/EverestChangeInventoryTrigger'),
+	/**
+ 	* @property {EverestCompleteAreaTrigger} EverestCompleteAreaTrigger - The EverestCompleteAreaTrigger class
+ 	* @memberof Lucid.Trigger
+ 	*/
+	EverestCompleteAreaTrigger: require('./lib/api/triggers/EverestCompleteAreaTrigger'),
+	/**
+ 	* @property {EverestCoreModeTrigger} EverestCoreModeTrigger - The EverestCoreModeTrigger class
+ 	* @memberof Lucid.Trigger
+ 	*/
+	EverestCoreModeTrigger: require('./lib/api/triggers/EverestCoreModeTrigger'),
+	/**
+ 	* @property {EverestCrystalShatterTrigger} EverestCrystalShatterTrigger - The EverestCrystalShatterTrigger class
+ 	* @memberof Lucid.Trigger
+ 	*/
+	EverestCrystalShatterTrigger: require('./lib/api/triggers/EverestCrystalShatterTrigger'),
+	/**
+ 	* @property {EverestCustomBirdTutorialTrigger} EverestCustomBirdTutorialTrigger - The EverestCustomBirdTutorialTrigger class
+ 	* @memberof Lucid.Trigger
+ 	*/
+	EverestCustomBirdTutorialTrigger: require('./lib/api/triggers/EverestCustomBirdTutorialTrigger'),
+	/**
+ 	* @property {EverestDialogTrigger} EverestDialogTrigger - The EverestDialogTrigger class
+ 	* @memberof Lucid.Trigger
+ 	*/
+	EverestDialogTrigger: require('./lib/api/triggers/EverestDialogTrigger'),
+	/**
+ 	* @property {EverestFlagTrigger} EverestFlagTrigger - The EverestFlagTrigger class
+ 	* @memberof Lucid.Trigger
+ 	*/
+	EverestFlagTrigger: require('./lib/api/triggers/EverestFlagTrigger'),
+	/**
+ 	* @property {EverestLavaBlockerTrigger} EverestLavaBlockerTrigger - The EverestLavaBlockerTrigger class
+ 	* @memberof Lucid.Trigger
+ 	*/
+	EverestLavaBlockerTrigger: require('./lib/api/triggers/EverestLavaBlockerTrigger'),
+	/**
+ 	* @property {EverestMusicLayerTrigger} EverestMusicLayerTrigger - The EverestMusicLayerTrigger class
+ 	* @memberof Lucid.Trigger
+ 	*/
+	EverestMusicLayerTrigger: require('./lib/api/triggers/EverestMusicLayerTrigger'),
+	/**
+ 	* @property {EverestSmoothCameraOffsetTrigger} EverestSmoothCameraOffsetTrigger - The EverestSmoothCameraOffsetTrigger class
+ 	* @memberof Lucid.Trigger
+ 	*/
+	EverestSmoothCameraOffsetTrigger: require('./lib/api/triggers/EverestSmoothCameraOffsetTrigger'),
+	/**
  	* @property {GoldenBerryCollectTrigger} GoldenBerryCollectTrigger - The GoldenBerryCollectTrigger class
  	* @memberof Lucid.Trigger
  	*/
@@ -1043,7 +1148,12 @@ Lucid.Trigger = {
  	* @property {WindAttackTrigger} WindAttackTrigger - The WindAttackTrigger class
  	* @memberof Lucid.Trigger
  	*/
-	WindAttackTrigger: require('./lib/api/triggers/WindAttackTrigger')
+	WindAttackTrigger: require('./lib/api/triggers/WindAttackTrigger'),
+	/**
+ 	* @property {WindTrigger} WindTrigger - The WindTrigger class
+ 	* @memberof Lucid.Trigger
+ 	*/
+	WindTrigger: require('./lib/api/triggers/WindTrigger')
 };
 
 Lucid.config.lucidDir = path.join(os.homedir(), '.lucid-dream');

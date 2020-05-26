@@ -23,6 +23,7 @@ const config = global.generateConfig = {
 		} else if (!validTypes.includes(type)) {
 			throw new Error(`invalid generate type "${type}". Valid types: ${validTypes}`);
 		}
+		validTypes.pop();
 
 		// determine which type(s) we are generating
 		const types = [];
