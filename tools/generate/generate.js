@@ -1,3 +1,4 @@
+const Confirm = require('prompt-confirm');
 const fs = require('fs').promises;
 const path = require('path');
 
@@ -17,6 +18,7 @@ const config = global.generateConfig = {
 			.map(f => f.replace(/\.js$/, ''));
 		validTypes.push('all');
 
+		// validate type choice
 		const type = process.argv[2];
 		if (!type) {
 			throw new Error(`must specify type to generate. Valid types: ${validTypes}`);
@@ -24,6 +26,15 @@ const config = global.generateConfig = {
 			throw new Error(`invalid generate type "${type}". Valid types: ${validTypes}`);
 		}
 		validTypes.pop();
+
+		// make sure we really wanna do this
+		const prompt = new Confirm({
+			message: `Are you sure you want to regenerate ${type}? This will delete and replace ${type} classes.`
+		});
+		if (!(await prompt.run())) {
+			console.log(`generate ${type} aborted.`);
+			process.exit(0);
+		}
 
 		// determine which type(s) we are generating
 		const types = [];
