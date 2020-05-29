@@ -98,11 +98,6 @@ Lucid.Entity = {
  	*/
 	BadelineBoost: require('./lib/api/entities/BadelineBoost'),
 	/**
- 	* @property {BigSpinner} BigSpinner - The BigSpinner class
- 	* @memberof Lucid.Entity
- 	*/
-	BigSpinner: require('./lib/api/entities/BigSpinner'),
-	/**
  	* @property {BigWaterfall} BigWaterfall - The BigWaterfall class
  	* @memberof Lucid.Entity
  	*/
@@ -122,11 +117,6 @@ Lucid.Entity = {
  	* @memberof Lucid.Entity
  	*/
 	BirdPath: require('./lib/api/entities/BirdPath'),
-	/**
- 	* @property {BlackGem} BlackGem - The BlackGem class
- 	* @memberof Lucid.Entity
- 	*/
-	BlackGem: require('./lib/api/entities/BlackGem'),
 	/**
  	* @property {BlockField} BlockField - The BlockField class
  	* @memberof Lucid.Entity
@@ -157,6 +147,11 @@ Lucid.Entity = {
  	* @memberof Lucid.Entity
  	*/
 	BridgeFixed: require('./lib/api/entities/BridgeFixed'),
+	/**
+ 	* @property {Bumper} Bumper - The Bumper class
+ 	* @memberof Lucid.Entity
+ 	*/
+	Bumper: require('./lib/api/entities/Bumper'),
 	/**
  	* @property {Cassette} Cassette - The Cassette class
  	* @memberof Lucid.Entity
@@ -343,10 +338,10 @@ Lucid.Entity = {
  	*/
 	FakeBlock: require('./lib/api/entities/FakeBlock'),
 	/**
- 	* @property {FakeHeart} FakeHeart - The FakeHeart class
+ 	* @property {FakeHeartGem} FakeHeartGem - The FakeHeartGem class
  	* @memberof Lucid.Entity
  	*/
-	FakeHeart: require('./lib/api/entities/FakeHeart'),
+	FakeHeartGem: require('./lib/api/entities/FakeHeartGem'),
 	/**
  	* @property {FakeWall} FakeWall - The FakeWall class
  	* @memberof Lucid.Entity
@@ -457,6 +452,11 @@ Lucid.Entity = {
  	* @memberof Lucid.Entity
  	*/
 	Hanginglamp: require('./lib/api/entities/Hanginglamp'),
+	/**
+ 	* @property {HeartGem} HeartGem - The HeartGem class
+ 	* @memberof Lucid.Entity
+ 	*/
+	HeartGem: require('./lib/api/entities/HeartGem'),
 	/**
  	* @property {HeartGemDoor} HeartGemDoor - The HeartGemDoor class
  	* @memberof Lucid.Entity

@@ -1,0 +1,846 @@
+{
+	"badelineBoost": {
+		"class": "BadelineBoost",
+		"type": "Entity"
+	},
+	"bigWaterfall": {
+		"class": "BigWaterfall",
+		"type": "Entity"
+	},
+	"bird": {
+		"class": "Bird",
+		"type": "Entity"
+	},
+	"birdForsakenCityGem": {
+		"class": "BirdForsakenCityGem",
+		"type": "Entity"
+	},
+	"birdPath": {
+		"class": "BirdPath",
+		"type": "Entity"
+	},
+	"blockField": {
+		"class": "BlockField",
+		"type": "Entity"
+	},
+	"bonfire": {
+		"class": "Bonfire",
+		"type": "Entity"
+	},
+	"booster": {
+		"class": "Booster",
+		"type": "Entity"
+	},
+	"bounceBlock": {
+		"class": "BounceBlock",
+		"type": "Entity"
+	},
+	"bridge": {
+		"class": "Bridge",
+		"type": "Entity"
+	},
+	"bridgeFixed": {
+		"class": "BridgeFixed",
+		"type": "Entity"
+	},
+	"bigSpinner": {
+		"class": "Bumper",
+		"type": "Entity"
+	},
+	"cassette": {
+		"class": "Cassette",
+		"type": "Entity"
+	},
+	"cassetteBlock": {
+		"class": "CassetteBlock",
+		"type": "Entity"
+	},
+	"chaserBarrier": {
+		"class": "ChaserBarrier",
+		"type": "Entity"
+	},
+	"checkpoint": {
+		"class": "Checkpoint",
+		"type": "Entity"
+	},
+	"cliffflag": {
+		"class": "Cliffflag",
+		"type": "Entity"
+	},
+	"cliffside_flag": {
+		"class": "CliffsideFlag",
+		"type": "Entity"
+	},
+	"clothesline": {
+		"class": "Clothesline",
+		"type": "Entity"
+	},
+	"cloud": {
+		"class": "Cloud",
+		"type": "Entity"
+	},
+	"clutterCabinet": {
+		"class": "ClutterCabinet",
+		"type": "Entity"
+	},
+	"clutterDoor": {
+		"class": "ClutterDoor",
+		"type": "Entity"
+	},
+	"cobweb": {
+		"class": "Cobweb",
+		"type": "Entity"
+	},
+	"colorSwitch": {
+		"class": "ColorSwitch",
+		"type": "Entity"
+	},
+	"conditionBlock": {
+		"class": "ConditionBlock",
+		"type": "Entity"
+	},
+	"coreMessage": {
+		"class": "CoreMessage",
+		"type": "Entity"
+	},
+	"coreModeToggle": {
+		"class": "CoreModeToggle",
+		"type": "Entity"
+	},
+	"coverupWall": {
+		"class": "CoverupWall",
+		"type": "Entity"
+	},
+	"crumbleBlock": {
+		"class": "CrumbleBlock",
+		"type": "Entity"
+	},
+	"crumbleWallOnRumble": {
+		"class": "CrumbleWallOnRumble",
+		"type": "Entity"
+	},
+	"crushBlock": {
+		"class": "CrushBlock",
+		"type": "Entity"
+	},
+	"cutsceneNode": {
+		"class": "CutsceneNode",
+		"type": "Entity"
+	},
+	"darkChaser": {
+		"class": "DarkChaser",
+		"type": "Entity"
+	},
+	"darkChaserEnd": {
+		"class": "DarkChaserEnd",
+		"type": "Entity"
+	},
+	"dashBlock": {
+		"class": "DashBlock",
+		"type": "Entity"
+	},
+	"dashSwitchH": {
+		"class": "DashSwitchH",
+		"type": "Entity"
+	},
+	"dashSwitchV": {
+		"class": "DashSwitchV",
+		"type": "Entity"
+	},
+	"door": {
+		"class": "Door",
+		"type": "Entity"
+	},
+	"dreamBlock": {
+		"class": "DreamBlock",
+		"type": "Entity"
+	},
+	"dreamHeartGem": {
+		"class": "DreamHeartGem",
+		"type": "Entity"
+	},
+	"dreammirror": {
+		"class": "Dreammirror",
+		"type": "Entity"
+	},
+	"everestCoreMessage": {
+		"class": "EverestCoreMessage",
+		"type": "Entity"
+	},
+	"everestCustomBirdTutorial": {
+		"class": "EverestCustomBirdTutorial",
+		"type": "Entity"
+	},
+	"everestMemorial": {
+		"class": "EverestMemorial",
+		"type": "Entity"
+	},
+	"everestNpc": {
+		"class": "EverestNpc",
+		"type": "Entity"
+	},
+	"everestStarClimbGraphicsController": {
+		"class": "EverestStarClimbGraphicsController",
+		"type": "Entity"
+	},
+	"exitBlock": {
+		"class": "ExitBlock",
+		"type": "Entity"
+	},
+	"eyebomb": {
+		"class": "Eyebomb",
+		"type": "Entity"
+	},
+	"fakeBlock": {
+		"class": "FakeBlock",
+		"type": "Entity"
+	},
+	"fakeHeart": {
+		"class": "FakeHeartGem",
+		"type": "Entity"
+	},
+	"fakeWall": {
+		"class": "FakeWall",
+		"type": "Entity"
+	},
+	"fallingBlock": {
+		"class": "FallingBlock",
+		"type": "Entity"
+	},
+	"finalBoss": {
+		"class": "FinalBoss",
+		"type": "Entity"
+	},
+	"finalBossFallingBlock": {
+		"class": "FinalBossFallingBlock",
+		"type": "Entity"
+	},
+	"finalBossMovingBlock": {
+		"class": "FinalBossMovingBlock",
+		"type": "Entity"
+	},
+	"fireBall": {
+		"class": "FireBall",
+		"type": "Entity"
+	},
+	"fireBarrier": {
+		"class": "FireBarrier",
+		"type": "Entity"
+	},
+	"flingBird": {
+		"class": "FlingBird",
+		"type": "Entity"
+	},
+	"flingBirdIntro": {
+		"class": "FlingBirdIntro",
+		"type": "Entity"
+	},
+	"floatingDebris": {
+		"class": "FloatingDebris",
+		"type": "Entity"
+	},
+	"floatySpaceBlock": {
+		"class": "FloatySpaceBlock",
+		"type": "Entity"
+	},
+	"flutterbird": {
+		"class": "Flutterbird",
+		"type": "Entity"
+	},
+	"foregroundDebris": {
+		"class": "ForegroundDebris",
+		"type": "Entity"
+	},
+	"friendlyGhost": {
+		"class": "FriendlyGhost",
+		"type": "Entity"
+	},
+	"glassBlock": {
+		"class": "GlassBlock",
+		"type": "Entity"
+	},
+	"glider": {
+		"class": "Glider",
+		"type": "Entity"
+	},
+	"goldenBerry": {
+		"class": "GoldenBerry",
+		"type": "Entity"
+	},
+	"goldenBlock": {
+		"class": "GoldenBlock",
+		"type": "Entity"
+	},
+	"gondola": {
+		"class": "Gondola",
+		"type": "Entity"
+	},
+	"greenBlocks": {
+		"class": "GreenBlocks",
+		"type": "Entity"
+	},
+	"hahaha": {
+		"class": "Hahaha",
+		"type": "Entity"
+	},
+	"hanginglamp": {
+		"class": "Hanginglamp",
+		"type": "Entity"
+	},
+	"blackGem": {
+		"class": "HeartGem",
+		"type": "Entity"
+	},
+	"heartGemDoor": {
+		"class": "HeartGemDoor",
+		"type": "Entity"
+	},
+	"iceBlock": {
+		"class": "IceBlock",
+		"type": "Entity"
+	},
+	"infiniteStar": {
+		"class": "InfiniteStar",
+		"type": "Entity"
+	},
+	"introCar": {
+		"class": "IntroCar",
+		"type": "Entity"
+	},
+	"introCrusher": {
+		"class": "IntroCrusher",
+		"type": "Entity"
+	},
+	"invisibleBarrier": {
+		"class": "InvisibleBarrier",
+		"type": "Entity"
+	},
+	"jumpThru": {
+		"class": "JumpThru",
+		"type": "Entity"
+	},
+	"kevins_pc": {
+		"class": "KevinsPc",
+		"type": "Entity"
+	},
+	"key": {
+		"class": "Key",
+		"type": "Entity"
+	},
+	"killbox": {
+		"class": "Killbox",
+		"type": "Entity"
+	},
+	"lamp": {
+		"class": "Lamp",
+		"type": "Entity"
+	},
+	"light": {
+		"class": "Light",
+		"type": "Entity"
+	},
+	"lightbeam": {
+		"class": "Lightbeam",
+		"type": "Entity"
+	},
+	"lightning": {
+		"class": "Lightning",
+		"type": "Entity"
+	},
+	"lightningBlock": {
+		"class": "LightningBlock",
+		"type": "Entity"
+	},
+	"lockBlock": {
+		"class": "LockBlock",
+		"type": "Entity"
+	},
+	"memorial": {
+		"class": "Memorial",
+		"type": "Entity"
+	},
+	"memorialTextController": {
+		"class": "MemorialTextController",
+		"type": "Entity"
+	},
+	"moonCreature": {
+		"class": "MoonCreature",
+		"type": "Entity"
+	},
+	"moveBlock": {
+		"class": "MoveBlock",
+		"type": "Entity"
+	},
+	"movingPlatform": {
+		"class": "MovingPlatform",
+		"type": "Entity"
+	},
+	"negaBlock": {
+		"class": "NegaBlock",
+		"type": "Entity"
+	},
+	"npc": {
+		"class": "Npc",
+		"type": "Entity"
+	},
+	"oshirodoor": {
+		"class": "Oshirodoor",
+		"type": "Entity"
+	},
+	"payphone": {
+		"class": "Payphone",
+		"type": "Entity"
+	},
+	"picoconsole": {
+		"class": "Picoconsole",
+		"type": "Entity"
+	},
+	"plateau": {
+		"class": "Plateau",
+		"type": "Entity"
+	},
+	"playbackBillboard": {
+		"class": "PlaybackBillboard",
+		"type": "Entity"
+	},
+	"playbackTutorial": {
+		"class": "PlaybackTutorial",
+		"type": "Entity"
+	},
+	"player": {
+		"class": "Player",
+		"type": "Entity"
+	},
+	"playerSeeker": {
+		"class": "PlayerSeeker",
+		"type": "Entity"
+	},
+	"redBlocks": {
+		"class": "RedBlocks",
+		"type": "Entity"
+	},
+	"refill": {
+		"class": "Refill",
+		"type": "Entity"
+	},
+	"reflectionHeartStatue": {
+		"class": "ReflectionHeartStatue",
+		"type": "Entity"
+	},
+	"resortLantern": {
+		"class": "ResortLantern",
+		"type": "Entity"
+	},
+	"resortRoofEnding": {
+		"class": "ResortRoofEnding",
+		"type": "Entity"
+	},
+	"resortmirror": {
+		"class": "Resortmirror",
+		"type": "Entity"
+	},
+	"ridgeGate": {
+		"class": "RidgeGate",
+		"type": "Entity"
+	},
+	"risingLava": {
+		"class": "RisingLava",
+		"type": "Entity"
+	},
+	"rotateSpinner": {
+		"class": "RotateSpinner",
+		"type": "Entity"
+	},
+	"rotatingPlatforms": {
+		"class": "RotatingPlatforms",
+		"type": "Entity"
+	},
+	"sandwichLava": {
+		"class": "SandwichLava",
+		"type": "Entity"
+	},
+	"seeker": {
+		"class": "Seeker",
+		"type": "Entity"
+	},
+	"seekerBarrier": {
+		"class": "SeekerBarrier",
+		"type": "Entity"
+	},
+	"seekerStatue": {
+		"class": "SeekerStatue",
+		"type": "Entity"
+	},
+	"sinkingPlatform": {
+		"class": "SinkingPlatform",
+		"type": "Entity"
+	},
+	"slider": {
+		"class": "Slider",
+		"type": "Entity"
+	},
+	"soundSource": {
+		"class": "SoundSource",
+		"type": "Entity"
+	},
+	"SoundTest3d": {
+		"class": "SoundTest3D",
+		"type": "Entity"
+	},
+	"spikesDown": {
+		"class": "SpikesDown",
+		"type": "Entity"
+	},
+	"spikesLeft": {
+		"class": "SpikesLeft",
+		"type": "Entity"
+	},
+	"spikesRight": {
+		"class": "SpikesRight",
+		"type": "Entity"
+	},
+	"spikesUp": {
+		"class": "SpikesUp",
+		"type": "Entity"
+	},
+	"spinner": {
+		"class": "Spinner",
+		"type": "Entity"
+	},
+	"spring": {
+		"class": "Spring",
+		"type": "Entity"
+	},
+	"starClimbController": {
+		"class": "StarClimbController",
+		"type": "Entity"
+	},
+	"starJumpBlock": {
+		"class": "StarJumpBlock",
+		"type": "Entity"
+	},
+	"strawberry": {
+		"class": "Strawberry",
+		"type": "Entity"
+	},
+	"SummitBackgroundManager": {
+		"class": "SummitBackgroundManager",
+		"type": "Entity"
+	},
+	"summitGemManager": {
+		"class": "SummitGemManager",
+		"type": "Entity"
+	},
+	"summitcheckpoint": {
+		"class": "Summitcheckpoint",
+		"type": "Entity"
+	},
+	"summitcloud": {
+		"class": "Summitcloud",
+		"type": "Entity"
+	},
+	"summitgem": {
+		"class": "Summitgem",
+		"type": "Entity"
+	},
+	"swapBlock": {
+		"class": "SwapBlock",
+		"type": "Entity"
+	},
+	"switchBlock": {
+		"class": "SwitchBlock",
+		"type": "Entity"
+	},
+	"switchGate": {
+		"class": "SwitchGate",
+		"type": "Entity"
+	},
+	"templeBigEyeball": {
+		"class": "TempleBigEyeball",
+		"type": "Entity"
+	},
+	"templeCrackedBlock": {
+		"class": "TempleCrackedBlock",
+		"type": "Entity"
+	},
+	"templeEye": {
+		"class": "TempleEye",
+		"type": "Entity"
+	},
+	"templeGate": {
+		"class": "TempleGate",
+		"type": "Entity"
+	},
+	"templeMirror": {
+		"class": "TempleMirror",
+		"type": "Entity"
+	},
+	"templeMirrorPortal": {
+		"class": "TempleMirrorPortal",
+		"type": "Entity"
+	},
+	"tentacles": {
+		"class": "Tentacles",
+		"type": "Entity"
+	},
+	"theoCrystal": {
+		"class": "TheoCrystal",
+		"type": "Entity"
+	},
+	"theoCrystalPedestal": {
+		"class": "TheoCrystalPedestal",
+		"type": "Entity"
+	},
+	"torch": {
+		"class": "Torch",
+		"type": "Entity"
+	},
+	"touchSwitch": {
+		"class": "TouchSwitch",
+		"type": "Entity"
+	},
+	"towerviewer": {
+		"class": "Towerviewer",
+		"type": "Entity"
+	},
+	"trackSpinner": {
+		"class": "TrackSpinner",
+		"type": "Entity"
+	},
+	"trapdoor": {
+		"class": "Trapdoor",
+		"type": "Entity"
+	},
+	"triggerSpikesDown": {
+		"class": "TriggerSpikesDown",
+		"type": "Entity"
+	},
+	"triggerSpikesLeft": {
+		"class": "TriggerSpikesLeft",
+		"type": "Entity"
+	},
+	"triggerSpikesOriginalDown": {
+		"class": "TriggerSpikesOriginalDown",
+		"type": "Entity"
+	},
+	"triggerSpikesOriginalLeft": {
+		"class": "TriggerSpikesOriginalLeft",
+		"type": "Entity"
+	},
+	"triggerSpikesOriginalRight": {
+		"class": "TriggerSpikesOriginalRight",
+		"type": "Entity"
+	},
+	"triggerSpikesOriginalUp": {
+		"class": "TriggerSpikesOriginalUp",
+		"type": "Entity"
+	},
+	"triggerSpikesRight": {
+		"class": "TriggerSpikesRight",
+		"type": "Entity"
+	},
+	"triggerSpikesUp": {
+		"class": "TriggerSpikesUp",
+		"type": "Entity"
+	},
+	"wallBooster": {
+		"class": "WallBooster",
+		"type": "Entity"
+	},
+	"wallSpringLeft": {
+		"class": "WallSpringLeft",
+		"type": "Entity"
+	},
+	"wallSpringRight": {
+		"class": "WallSpringRight",
+		"type": "Entity"
+	},
+	"water": {
+		"class": "Water",
+		"type": "Entity"
+	},
+	"waterfall": {
+		"class": "Waterfall",
+		"type": "Entity"
+	},
+	"wavedashmachine": {
+		"class": "Wavedashmachine",
+		"type": "Entity"
+	},
+	"whiteblock": {
+		"class": "Whiteblock",
+		"type": "Entity"
+	},
+	"wire": {
+		"class": "Wire",
+		"type": "Entity"
+	},
+	"yellowBlocks": {
+		"class": "YellowBlocks",
+		"type": "Entity"
+	},
+	"zipMover": {
+		"class": "ZipMover",
+		"type": "Entity"
+	},
+	"altMusicTrigger": {
+		"class": "AltMusicTrigger",
+		"type": "Trigger"
+	},
+	"ambienceParamTrigger": {
+		"class": "AmbienceParamTrigger",
+		"type": "Trigger"
+	},
+	"birdPathTrigger": {
+		"class": "BirdPathTrigger",
+		"type": "Trigger"
+	},
+	"blackholeStrength": {
+		"class": "BlackholeStrength",
+		"type": "Trigger"
+	},
+	"bloomFadeTrigger": {
+		"class": "BloomFadeTrigger",
+		"type": "Trigger"
+	},
+	"cameraAdvanceTargetTrigger": {
+		"class": "CameraAdvanceTargetTrigger",
+		"type": "Trigger"
+	},
+	"cameraOffsetTrigger": {
+		"class": "CameraOffsetTrigger",
+		"type": "Trigger"
+	},
+	"cameraTargetTrigger": {
+		"class": "CameraTargetTrigger",
+		"type": "Trigger"
+	},
+	"changeRespawnTrigger": {
+		"class": "ChangeRespawnTrigger",
+		"type": "Trigger"
+	},
+	"checkpointBlockerTrigger": {
+		"class": "CheckpointBlockerTrigger",
+		"type": "Trigger"
+	},
+	"creditsTrigger": {
+		"class": "CreditsTrigger",
+		"type": "Trigger"
+	},
+	"detachFollowersTrigger": {
+		"class": "DetachFollowersTrigger",
+		"type": "Trigger"
+	},
+	"eventTrigger": {
+		"class": "EventTrigger",
+		"type": "Trigger"
+	},
+	"everestActivateDreamBlocksTrigger": {
+		"class": "EverestActivateDreamBlocksTrigger",
+		"type": "Trigger"
+	},
+	"everestChangeInventoryTrigger": {
+		"class": "EverestChangeInventoryTrigger",
+		"type": "Trigger"
+	},
+	"everestCompleteAreaTrigger": {
+		"class": "EverestCompleteAreaTrigger",
+		"type": "Trigger"
+	},
+	"everestCoreModeTrigger": {
+		"class": "EverestCoreModeTrigger",
+		"type": "Trigger"
+	},
+	"everestCrystalShatterTrigger": {
+		"class": "EverestCrystalShatterTrigger",
+		"type": "Trigger"
+	},
+	"everestCustomBirdTutorialTrigger": {
+		"class": "EverestCustomBirdTutorialTrigger",
+		"type": "Trigger"
+	},
+	"everestDialogTrigger": {
+		"class": "EverestDialogTrigger",
+		"type": "Trigger"
+	},
+	"everestFlagTrigger": {
+		"class": "EverestFlagTrigger",
+		"type": "Trigger"
+	},
+	"everestLavaBlockerTrigger": {
+		"class": "EverestLavaBlockerTrigger",
+		"type": "Trigger"
+	},
+	"everestMusicLayerTrigger": {
+		"class": "EverestMusicLayerTrigger",
+		"type": "Trigger"
+	},
+	"everestSmoothCameraOffsetTrigger": {
+		"class": "EverestSmoothCameraOffsetTrigger",
+		"type": "Trigger"
+	},
+	"goldenBerryCollectTrigger": {
+		"class": "GoldenBerryCollectTrigger",
+		"type": "Trigger"
+	},
+	"interactTrigger": {
+		"class": "InteractTrigger",
+		"type": "Trigger"
+	},
+	"lightFadeTrigger": {
+		"class": "LightFadeTrigger",
+		"type": "Trigger"
+	},
+	"lookoutBlocker": {
+		"class": "LookoutBlocker",
+		"type": "Trigger"
+	},
+	"minitextboxTrigger": {
+		"class": "MinitextboxTrigger",
+		"type": "Trigger"
+	},
+	"moonGlitchBackgroundTrigger": {
+		"class": "MoonGlitchBackgroundTrigger",
+		"type": "Trigger"
+	},
+	"musicFadeTrigger": {
+		"class": "MusicFadeTrigger",
+		"type": "Trigger"
+	},
+	"musicTrigger": {
+		"class": "MusicTrigger",
+		"type": "Trigger"
+	},
+	"noRefillTrigger": {
+		"class": "NoRefillTrigger",
+		"type": "Trigger"
+	},
+	"oshiroTrigger": {
+		"class": "OshiroTrigger",
+		"type": "Trigger"
+	},
+	"respawnTargetTrigger": {
+		"class": "RespawnTargetTrigger",
+		"type": "Trigger"
+	},
+	"rumbleTrigger": {
+		"class": "RumbleTrigger",
+		"type": "Trigger"
+	},
+	"spawnFacingTrigger": {
+		"class": "SpawnFacingTrigger",
+		"type": "Trigger"
+	},
+	"stopBoostTrigger": {
+		"class": "StopBoostTrigger",
+		"type": "Trigger"
+	},
+	"windAttackTrigger": {
+		"class": "WindAttackTrigger",
+		"type": "Trigger"
+	},
+	"windTrigger": {
+		"class": "WindTrigger",
+		"type": "Trigger"
+	}
+}
