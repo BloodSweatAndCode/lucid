@@ -23,7 +23,7 @@
     "jsdoc": "^3.6.4",
     "lodash.difference": "^4.5.0",
     "mkdirp": "^1.0.4",
-    "mocha": "^7.1.2",
+    "mocha": "^10.2.0",
     "nyc": "^15.0.1",
     "prompt-confirm": "^2.0.4",
     "should": "^13.2.3"
